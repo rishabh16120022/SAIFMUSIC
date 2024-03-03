@@ -54,7 +54,7 @@ async def bot_leave(_, message):
 
 @app.on_message(filters.command(["spg"], ["/", "!", "."]))
 async def search(event):
-    msg = await event.respond("Searching...")
+    msg = await event.respond("sᴇᴀʀᴄʜɪɴɢ...")
     async with aiohttp.ClientSession() as session:
         start = 1
         async with session.get(f"https://content-customsearch.googleapis.com/customsearch/v1?cx=ec8db9e1f9e41e65e&q={event.text.split()[1]}&key=AIzaSyAa8yy0GdcGPHdtD083HiGGx_S0vMPScDM&start={start}", headers={"x-referer": "https://explorer.apis.google.com"}) as r:
@@ -62,7 +62,7 @@ async def search(event):
             result = ""
             
             if not response.get("items"):
-                return await msg.edit("No results found!")
+                return await msg.edit("ɴᴏ ʀᴇsᴜʟᴛs ғᴏᴜɴᴅ!")
             for item in response["items"]:
                 title = item["title"]
                 link = item["link"]
@@ -76,6 +76,6 @@ async def search(event):
                     # remove duplicates
                     continue
                 result += f"{title}\n{link}\n\n"
-            prev_and_next_btns = [Button.inline("▶️Next▶️", data=f"next {start+10} {event.text.split()[1]}")]
+            prev_and_next_btns = [Button.inline("▶𝐍ext", data=f"next {start+10} {event.text.split()[1]}")]
             await msg.edit(result, link_preview=False, buttons=prev_and_next_btns)
             await session.close()
