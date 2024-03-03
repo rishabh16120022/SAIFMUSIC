@@ -14,8 +14,8 @@ from DAXXMUSIC.mongo.couples_db import _get_image, get_couple
 POLICE = [
     [
         InlineKeyboardButton(
-            text="𓊈𒆜彡[𝐃𝚊𝚡𝚡 𝐂𝙲 𝐂𝙻𝚄𝙱 ]彡𒆜𓊉",
-            url=f"https://t.me/ALLTYPECC",
+            text="ƉɛαƉ Ɔнαт",
+            url=f"https://t.me/SAIFHELPGC",
         ),
     ],
 ]
@@ -108,7 +108,7 @@ async def ctest(_, message):
          TXT = f"""
 **ᴛᴏᴅᴀʏ's ᴄᴏᴜᴘʟᴇ ᴏғ ᴛʜᴇ ᴅᴀʏ :
 
-{N1} + {N2} = 💚
+{N1} + {N2} = 👄
 
 ɴᴇxᴛ ᴄᴏᴜᴘʟᴇs ᴡɪʟʟ ʙᴇ sᴇʟᴇᴄᴛᴇᴅ ᴏɴ {tomorrow} !!**
 """
@@ -152,7 +152,7 @@ async def ctest(_, message):
 
 __mod__ = "COUPLES"
 __help__ = """
-**» /couples** - Get Todays Couples Of The Group In Interactive View
+**» /couples** - ɢᴇᴛ ᴛᴏᴅᴀʏs ᴄᴏᴜᴘʟᴇs ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ ɪɴ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴠɪᴇᴡ
 """
 
 
