@@ -26,8 +26,8 @@ async def get_domain_info(client, message):
                 # Add more details as needed
             )
         else:
-            response = "Failed to retrieve domain hosting information."
+            response = "ғᴀɪʟᴇᴅ ᴛᴏ ʀᴇᴛʀɪᴇᴠᴇ ᴅᴏᴍᴀɪɴ ʜᴏsᴛɪɴɢ ɪɴғᴏʀᴍᴀᴛɪᴏɴ."
 
         await message.reply(response)
     else:
-        await message.reply("Please provide a domain name after the /domain command.")
+        await message.reply("ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ ᴀғᴛᴇʀ ᴛʜᴇ /domain ᴄᴏᴍᴍᴀɴᴅ.")
