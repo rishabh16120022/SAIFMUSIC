@@ -16,8 +16,8 @@ vdo_link = {}
 
 keyboard = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("⊝ ᴄʟᴏsᴇ ⊝", callback_data="close_data"), 
-            InlineKeyboardButton("⊝ ᴠᴘʟᴀʏ⊝", callback_data="play"),
+            InlineKeyboardButton("⊝ 𝐂ʟᴏsᴇ ⊝", callback_data="close_data"), 
+            InlineKeyboardButton("⊝ 𝐕ᴘʟᴀʏ⊝", callback_data="play"),
         ]
 ])
 
@@ -86,7 +86,7 @@ def get_video_info(title):
 @app.on_message(filters.command("porn"))
 async def get_random_video_info(client, message):
     if len(message.command) == 1:
-        await message.reply("Please provide a title to search.")
+        await message.reply("ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴛɪᴛʟᴇ ᴛᴏ sᴇᴀʀᴄʜ.")
         return
 
     title = ' '.join(message.command[1:])
@@ -98,14 +98,14 @@ async def get_random_video_info(client, message):
         vdo_link[message.chat.id] = {'link': video_link}
         keyboard1 = InlineKeyboardMarkup([
             [
-                InlineKeyboardButton("⊝ ᴄʟᴏsᴇ ⊝", callback_data="close_data"), 
-                InlineKeyboardButton("⊝ ᴠᴘʟᴀʏ⊝", callback_data=f"vplay"),
+                InlineKeyboardButton("⊝ 𝐂ʟᴏsᴇ ⊝", callback_data="close_data"), 
+                InlineKeyboardButton("⊝ 𝐕ᴘʟᴀʏ⊝", callback_data=f"vplay"),
             ]
     ])
         await message.reply_video(video, caption=f"{title}", reply_markup=keyboard1)
              
     else:
-        await message.reply(f"No video link found for '{title}'.")
+        await message.reply(f"ɴᴏ ᴠɪᴅᴇᴏ ʟɪɴᴋ ғᴏᴜɴᴅ ғᴏʀ '{title}'.")
 
 ######
 
@@ -113,7 +113,7 @@ async def get_random_video_info(client, message):
 @app.on_message(filters.command("xnxx"))
 async def get_random_video_info(client, message):
     if len(message.command) == 1:
-        await message.reply("Please provide a title to search.")
+        await message.reply("ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴛɪᴛʟᴇ ᴛᴏ sᴇᴀʀᴄʜ.")
         return
 
     title = ' '.join(message.command[1:])
@@ -133,5 +133,5 @@ async def get_random_video_info(client, message):
             reply_markup=keyboard
         )
     else:
-        await message.reply(f"No video link found for '{title}'.")
+        await message.reply(f"ɴᴏ ᴠɪᴅᴇᴏ ʟɪɴᴋ ғᴏᴜɴᴅ ғᴏʀ '{title}'.")
             
