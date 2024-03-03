@@ -25,10 +25,10 @@ async def convert(
 
     for message in reply_messages:
         if not message.document or not message.document.mime_type.startswith("image"):
-            return await m.edit("Not a valid image document, ABORTED!")
+            return await m.edit("ɴᴏᴛ ᴀ ᴠᴀʟɪᴅ ɪᴍᴀɢᴇ ᴅᴏᴄᴜᴍᴇɴᴛ, ᴀʙᴏʀᴛᴇᴅ!")
 
         if message.document.file_size > 5000000:
-            return await m.edit("Size too large, ABORTED!")
+            return await m.edit("𝐒𝐢𝐳𝐞 тσσ ℓαяɢɛ, 𝗔βѲЯƬЄƉ!")
 
         documents.append(await message.download())
 
@@ -37,7 +37,7 @@ async def convert(
         img.save(img_path, "JPEG", quality=100)
 
     pdf = BytesIO(img2pdf.convert(documents))
-    pdf.name = "DAXX.pdf"
+    pdf.name = "hinata.pdf"
 
     if len(main_message.command) >= 2:
         names = main_message.text.split(None, 1)[1]
@@ -74,10 +74,10 @@ async def img_to_pdf(_, message: Message):
     reply = message.reply_to_message
     if not reply:
         return await message.reply(
-            "Reply to an image (as document) or group of images."
+            "ʀᴇᴘʟʏ ᴛᴏ ᴀɴ ɪᴍᴀɢᴇ (as document) ᴏʀ ɢʀᴏᴜᴘ ᴏғ ɪᴍᴀɢᴇs."
         )
 
-    m = await message.reply_text("Converting..")
+    m = await message.reply_text("ᴄᴏɴᴠᴇʀᴛɪɴɢ..")
     start_time = time()
 
     if reply.media_group_id:
