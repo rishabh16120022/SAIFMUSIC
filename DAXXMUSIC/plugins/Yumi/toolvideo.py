@@ -63,9 +63,9 @@ def remove_media(client, message: Message):
                 os.remove(file_path)
                 os.remove("output.mp4")
             else:
-                app.send_message(message.chat.id, "Invalid command. Please use either /remove audio or /remove video.")
+                app.send_message(message.chat.id, "ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ. ᴘʟᴇᴀsᴇ ᴜsᴇ ᴇɪᴛʜᴇʀ /remove ᴀᴜᴅɪᴏ or /remove ᴠɪᴅᴇᴏ.")
         else:
-            app.send_message(message.chat.id, "Please specify whether to remove audio or video using /remove audio or /remove video.")
+            app.send_message(message.chat.id, "ᴘʟᴇᴀsᴇ sᴘᴇᴄɪғʏ ᴡʜᴇᴛʜᴇʀ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴀᴜᴅɪᴏ ᴏʀ ᴠɪᴅᴇᴏ ᴜsɪɴɢ /remove ᴀᴜᴅɪᴏ or /remove ᴠɪᴅᴇᴏ.")
     else:
-        app.send_message(message.chat.id, "The replied message is not a video.")
+        app.send_message(message.chat.id, "ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ ɪs ɴᴏᴛ ᴀ ᴠɪᴅᴇᴏ.")
         
