@@ -21,11 +21,11 @@ def ReplyCheck(message: Message):
 
 infotext = (
     "[{full_name}](tg://user?id={user_id})\n\n"
-    " ➻ ᴜsᴇʀ ɪᴅ: `{user_id}`\n"
-    " ➻ ғɪʀsᴛ ɴᴀᴍᴇ: `{first_name}`\n"
-    " ➻ ʟᴀsᴛ ɴᴀᴍᴇ: `{last_name}`\n"
-    " ➻ ᴜsᴇʀɴᴀᴍᴇ: `@{username}`\n"
-    " ➻ ʟᴀsᴛ sᴇᴇɴ: `{last_online}`"
+    " ➻ 𝐔sᴇʀ 𝐈ᴅ: `{user_id}`\n"
+    " ➻ 𝐅ɪʀsᴛ 𝐍ᴀᴍᴇ: `{first_name}`\n"
+    " ➻ 𝐋ᴀsᴛ 𝐍ᴀᴍᴇ: `{last_name}`\n"
+    " ➻ 𝐔sᴇʀɴᴀᴍᴇ: `@{username}`\n"
+    " ➻ 𝐋ᴀsᴛ 𝐒ᴇᴇɴ: `{last_online}`"
 )
 
 
