@@ -369,7 +369,7 @@ async def chat_watcher_func(_, message):
                             else:
                                 send = await message.reply_photo(
                                     photo=f"downloads/{user_id}.jpg",
-                                    caption=f"**{first_name[:25]}** ɪs ᴀғᴋ sɪɴᴄᴇ {seenago}\n\nʀᴇᴀsᴏɴ: `{reasonafk}`\n\n",
+                                    caption=f"**{first_name[:25]}** ɪs ᴀғᴋ  sɪɴᴄᴇ {seenago}\n\nʀᴇᴀsᴏɴ: `{reasonafk}`\n\n",
                                 )
                     except:
                         msg += f"**{first_name[:25]}** ɪs ᴀғᴋ\n\n"
