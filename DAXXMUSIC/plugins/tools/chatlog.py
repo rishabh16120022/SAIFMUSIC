@@ -11,11 +11,12 @@ from pathlib import Path
 from pyrogram.enums import ParseMode
 
 photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+    "https://te.legra.ph/file/030e1ec8d895acd51bf1f.jpg",
+    "https://te.legra.ph/file/34d3eb79df1a5a85fad25.jpg",
+    "https://te.legra.ph/file/e19d8eb469721d4df03de.jpg",
+    "https://te.legra.ph/file/f4f57c093a37338a92e15.jpg",
+    "https://te.legra.ph/file/19b39797571b44a774b86.jpg",
+    "https://te.legra.ph/file/18a754b9c1df61427992e.jpg",
 ]
 
 @app.on_message(filters.new_chat_members, group=2)
@@ -28,15 +29,15 @@ async def join_watcher(_, message):
             msg = (
                 f"📝 ᴍᴜsɪᴄ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴀ ɴᴇᴡ ɢʀᴏᴜᴘ\n\n"
                 f"____________________________________\n\n"
-                f"📌 ᴄʜᴀᴛ ɴᴀᴍᴇ: {chat.title}\n"
-                f"🍂 ᴄʜᴀᴛ ɪᴅ: {chat.id}\n"
-                f"🔐 ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ: @{chat.username}\n"
-                f"🛰 ᴄʜᴀᴛ ʟɪɴᴋ: [ᴄʟɪᴄᴋ]({link})\n"
-                f"📈 ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs: {count}\n"
-                f"🤔 ᴀᴅᴅᴇᴅ ʙʏ: {message.from_user.mention}"
+                f"📌 𝐂ʜᴀᴛ 𝐍ᴀᴍᴇ: {chat.title}\n"
+                f"🍂 𝐂ʜᴀᴛ 𝐈ᴅ: {chat.id}\n"
+                f"🔐 𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ: @{chat.username}\n"
+                f"🛰 𝐂ʜᴀᴛ 𝐋ɪɴᴋ: [ᴄʟɪᴄᴋ]({link})\n"
+                f"📈 𝐆ʀᴏᴜᴘ 𝐌ᴇᴍʙᴇʀs: {count}\n"
+                f"🤔 𝐀ᴅᴅᴇᴅ 𝐁ʏ: {message.from_user.mention}"
             )
             await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(f"sᴇᴇ ɢʀᴏᴜᴘ👀", url=f"{link}")]
+                [InlineKeyboardButton(f"𝐒ᴇᴇ 𝐆ʀᴏᴜᴘ 👀", url=f"{link}")]
             ]))
 
 @app.on_message(filters.left_chat_member)
