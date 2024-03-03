@@ -15,7 +15,7 @@ async def chat_gpt(bot, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "Example:\n\n/chatgpt Where is TajMahal?"
+                "Example:\n\n/ᴄʜᴀᴛɢᴘᴛ ᴡʜᴇʀᴇ ɪs sᴀɪғ ᴅɪᴄᴛᴀᴛᴏʀ?"
             )
         else:
             a = message.text.split(' ', 1)[1]
@@ -28,13 +28,13 @@ async def chat_gpt(bot, message):
                     end_time = time.time()
                     telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
                     await message.reply_text(
-                        f" {x}      ᴀɴsᴡᴇʀɪɴɢ ʙʏ ➛  @NexikoBot",
+                        f" {x}      ᴀɴsᴡᴇʀɪɴɢ ʙʏ ➛  @HINATA_N_BOT",
                         parse_mode=ParseMode.MARKDOWN
                     )
                 else:
-                    await message.reply_text("No 'results' key found in the response.")
+                    await message.reply_text("ɴᴏ 'results' ᴋᴇʏ ғᴏᴜɴᴅ ɪɴ ᴛʜᴇ ʀᴇsᴘᴏɴsᴇ.")
             except KeyError:
                 # Handle any other KeyError that might occur
-                await message.reply_text("Error accessing the response.")
+                await message.reply_text("ᴇʀʀᴏʀ ᴀᴄᴄᴇssɪɴɢ ᴛʜᴇ ʀᴇsᴘᴏɴsᴇ.")
     except Exception as e:
-        await message.reply_text(f"**á´‡Ê€Ê€á´Ê€: {e} ")
+        await message.reply_text(f"**ʜᴇʟʟᴏ: {e} ")
