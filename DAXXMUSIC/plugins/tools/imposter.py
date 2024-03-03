@@ -5,33 +5,53 @@ from DAXXMUSIC.plugins.tools.pretenderdb import impo_off, impo_on, check_pretend
 from DAXXMUSIC import app
 
 MISHI = [
-    "https://graph.org/file/f86b71018196c5cfe7344.jpg",
-    "https://graph.org/file/a3db9af88f25bb1b99325.jpg",
-    "https://graph.org/file/5b344a55f3d5199b63fa5.jpg",
-    "https://graph.org/file/84de4b440300297a8ecb3.jpg",
-    "https://graph.org/file/84e84ff778b045879d24f.jpg",
-    "https://graph.org/file/a4a8f0e5c0e6b18249ffc.jpg",
-    "https://graph.org/file/ed92cada78099c9c3a4f7.jpg",
-    "https://graph.org/file/d6360613d0fa7a9d2f90b.jpg"
-    "https://graph.org/file/37248e7bdff70c662a702.jpg",
-    "https://graph.org/file/0bfe29d15e918917d1305.jpg",
-    "https://graph.org/file/16b1a2828cc507f8048bd.jpg",
-    "https://graph.org/file/e6b01f23f2871e128dad8.jpg",
-    "https://graph.org/file/cacbdddee77784d9ed2b7.jpg",
-    "https://graph.org/file/ddc5d6ec1c33276507b19.jpg",
-    "https://graph.org/file/39d7277189360d2c85b62.jpg",
-    "https://graph.org/file/5846b9214eaf12c3ed100.jpg",
-    "https://graph.org/file/ad4f9beb4d526e6615e18.jpg",
-    "https://graph.org/file/3514efaabe774e4f181f2.jpg",
+"https://te.legra.ph/file/18a754b9c1df61427992e.jpg",
+"https://te.legra.ph/file/68a5a003282b353609828.jpg",
+"https://te.legra.ph/file/fa87b2f47ed6d2a2641f6.jpg",
+"https://te.legra.ph/file/7e5d608a1437fabc22fca.jpg",
+"https://te.legra.ph/file/b7c2c0beac656f78a1ead.jpg",
+"https://te.legra.ph/file/ce7ee90be3a77b49c1be5.jpg",
+"https://te.legra.ph/file/6d2c3d854f54da97f31f7.jpg",
+"https://te.legra.ph/file/43b6190d401bf57276220.jpg",
+"https://te.legra.ph/file/0e52c40be2b6fc8d092ce.jpg",
+"https://te.legra.ph/file/194474140c27f63bc6b65.jpg",
+"https://te.legra.ph/file/12d545bd67b81d12140e0.jpg",
+"https://te.legra.ph/file/42e5d1916e97eff7cfe87.jpg",
+"https://te.legra.ph/file/610ee36e620d86422c13c.jpg",
+"https://te.legra.ph/file/3317f8331e0f4e0a4348a.jpg",
+"https://te.legra.ph/file/1ef296f0e545422c57747.jpg",
+"https://te.legra.ph/file/8719feedf475f42185c7a.jpg",
+"https://te.legra.ph/file/ef46323bd0a99826c1860.jpg",
+"https://te.legra.ph/file/a9a30166d484436b13276.jpg",
+"https://te.legra.ph/file/5a80607332f06333503a7.jpg",    
+"https://te.legra.ph/file/18a754b9c1df61427992e.jpg",
+"https://te.legra.ph/file/68a5a003282b353609828.jpg",
+"https://te.legra.ph/file/fa87b2f47ed6d2a2641f6.jpg",
+"https://te.legra.ph/file/7e5d608a1437fabc22fca.jpg",
+"https://te.legra.ph/file/b7c2c0beac656f78a1ead.jpg",
+"https://te.legra.ph/file/ce7ee90be3a77b49c1be5.jpg",
+"https://te.legra.ph/file/6d2c3d854f54da97f31f7.jpg",
+"https://te.legra.ph/file/43b6190d401bf57276220.jpg",
+"https://te.legra.ph/file/7c442fd2ecf5b53ebcc53.jpg",
+"https://te.legra.ph/file/194474140c27f63bc6b65.jpg",
+"https://te.legra.ph/file/12d545bd67b81d12140e0.jpg",
+"https://te.legra.ph/file/42e5d1916e97eff7cfe87.jpg",
+"https://te.legra.ph/file/610ee36e620d86422c13c.jpg",
+"https://te.legra.ph/file/3317f8331e0f4e0a4348a.jpg",
+"https://te.legra.ph/file/1ef296f0e545422c57747.jpg",
+"https://te.legra.ph/file/8719feedf475f42185c7a.jpg",
+"https://te.legra.ph/file/ef46323bd0a99826c1860.jpg",
+"https://te.legra.ph/file/a9a30166d484436b13276.jpg",
+"https://te.legra.ph/file/5a80607332f06333503a7.jpg",
 ]
 
 
 ROY = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ",
-            url=f"https://t.me/NexikoBot?startgroup=true"),
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/DAXXSUPPORT")
+            text="•─╼⃝𖠁 𝐀ᴅᴅ 𝐌ᴇ 𝐁ᴀʙʏ 𖠁⃝╾─•",
+            url=f"https://t.me/HINATA_N_BOT?startgroup=true"),
+        InlineKeyboardButton(text="𝐔ᴘᴅᴀᴛᴇ", url=f"https://t.me/SAIFALLBOT")
     ],
 ]
 
@@ -55,10 +75,10 @@ async def chk_usr(_, message: Message):
         or lastname_before != message.from_user.last_name
     ):
         msg += f"""
-**♥︎ ᴜsᴇʀ sʜᴏʀᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ♥︎**
+**♥︎ 𝐔sᴇʀ 𝐒ʜᴏʀᴛ 𝐈ɴғᴏʀᴍᴀᴛɪᴏɴ ♥︎**
 
-**๏ ɴᴀᴍᴇ** ➛ {message.from_user.mention}
-**๏ ᴜsᴇʀ ɪᴅ** ➛ {message.from_user.id}
+**๏ 𝐍ᴀᴍᴇ** ➛ {message.from_user.mention}
+**๏ 𝐔sᴇʀ 𝐈ᴅ** ➛ {message.from_user.id}
 """
     if usernamebefore != message.from_user.username:
         usernamebefore = f"@{usernamebefore}" if usernamebefore else "NO USERNAME"
@@ -68,10 +88,10 @@ async def chk_usr(_, message: Message):
             else "NO USERNAME"
         )
         msg += """
-**♥︎ ᴄʜᴀɴɢᴇᴅ ᴜsᴇʀɴᴀᴍᴇ ♥︎**
+**♥︎ 𝐂ʜᴀɴɢᴇᴅ 𝐔sᴇʀɴᴀᴍᴇ ♥︎**
 
-**๏ ʙᴇғᴏʀᴇ** ➛ {bef}
-**๏ ᴀғᴛᴇʀ** ➛ {aft}
+**๏ 𝐁ᴇғᴏʀᴇ** ➛ {bef}
+**๏ 𝐀ғᴛᴇʀ** ➛ {aft}
 """.format(bef=usernamebefore, aft=usernameafter)
         await add_userdata(
             message.from_user.id,
@@ -81,10 +101,10 @@ async def chk_usr(_, message: Message):
         )
     if first_name != message.from_user.first_name:
         msg += """
-**♥︎ ᴄʜᴀɴɢᴇs ғɪʀsᴛ ɴᴀᴍᴇ ♥︎**
+**♥︎ 𝐂ʜᴀɴɢᴇs 𝐅ɪʀsᴛ 𝐍ᴀᴍᴇ ♥︎**
 
-**๏ ʙᴇғᴏʀᴇ** ➛ {bef}
-**๏ ᴀғᴛᴇʀ** ➛ {aft}
+**๏ 𝐁ᴇғᴏʀᴇ** ➛ {bef}
+**๏ 𝐀ғᴛᴇʀ** ➛ {aft}
 """.format(
             bef=first_name, aft=message.from_user.first_name
         )
@@ -98,10 +118,10 @@ async def chk_usr(_, message: Message):
         lastname_before = lastname_before or "NO LAST NAME"
         lastname_after = message.from_user.last_name or "NO LAST NAME"
         msg += """
-**♥︎ ᴄʜᴀɴɢᴇs ʟᴀsᴛ ɴᴀᴍᴇ ♥︎**
+**♥︎ 𝐂ʜᴀɴɢᴇs 𝐋ᴀsᴛ 𝐍ᴀᴍᴇ ♥︎**
 
-**๏ ʙᴇғᴏʀᴇ** ➛ {bef}
-**๏ ᴀғᴛᴇʀ** ➛ {aft}
+**๏ 𝐁ᴇғᴏʀᴇ** ➛ {bef}
+**๏ 𝐀ғᴛᴇʀ** ➛ {aft}
 """.format(
             bef=lastname_before, aft=lastname_after
         )
