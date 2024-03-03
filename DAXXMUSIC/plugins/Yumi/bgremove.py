@@ -36,10 +36,10 @@ async def RemoveBG(input_file_name):
 
 @app.on_message(filters.command("rmbg"))
 async def rmbg(bot, message):
-  rmbg = await message.reply("Processing...") 
+  rmbg = await message.reply("ᴘʀᴏᴄᴇssɪɴɢ...") 
   replied = message.reply_to_message
   if not replied:
-      return await rmbg.edit("Reply to a photo to Remove it's Backgroud")
+      return await rmbg.edit("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴛᴏ ʀᴇᴍᴏᴠᴇ ɪᴛ's ʙᴀᴄᴋɢʀᴏᴜᴅ")
 
   if replied.photo:
       photo = await bot.download_media(replied)
@@ -49,8 +49,8 @@ async def rmbg(bot, message):
           bruh = y["errors"][0]
           details = bruh.get("detail", "")
           return await rmbg.edit(f"ERROR ~ {bruh['title']},\n{details}")
-      await message.reply_photo(photo=y,caption="Here is your Image without Background")
+      await message.reply_photo(photo=y,caption="ʜᴇʀᴇ ɪs ʏᴏᴜʀ ɪᴍᴀɢᴇ ᴡɪᴛʜᴏᴜᴛ ʙᴀᴄᴋɢʀᴏᴜɴᴅ ᴘʀᴏᴅᴜᴄᴇᴅ ʙʏ ʜɪɴᴀᴛᴀ ʙᴀʙʏ 💖")
       await message.reply_document(document=y)
       await rmbg.delete()
       return os.remove(y)
-  await rmbg.edit("Reply only to a photo to Remove it's Background")
+  await rmbg.edit("ʀᴇᴘʟʏ ᴏɴʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ to ʀᴇᴍᴏᴠᴇ ɪᴛ's ʙᴀᴄᴋɢʀᴏᴜɴᴅ")
