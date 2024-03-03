@@ -70,15 +70,15 @@ async def bugs(_, msg: Message):
                 ),
             )
             await app.send_photo(
-                -1001802990747,
-                photo="https://telegra.ph/file/f66e5843568d4b7f2a652.jpg",
+                -1001945546436,
+                photo="",
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("⌯ ᴠɪᴇᴡ ʙᴜɢ ⌯", url=f"{msg.link}")],
+                        [InlineKeyboardButton("⌯ 𝐕ɪᴇᴡ 𝐁ᴜɢ ⌯", url=f"{msg.link}")],
                         [
                             InlineKeyboardButton(
-                                "⌯ ᴄʟᴏsᴇ ⌯", callback_data="close_send_photo"
+                                "⌯ 𝐂ʟᴏsᴇ ⌯", callback_data="close_send_photo"
                             )
                         ],
                     ]
