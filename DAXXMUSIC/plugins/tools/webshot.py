@@ -8,7 +8,7 @@ from pyrogram.types import *
 from DAXXMUSIC import app
 
 button = InlineKeyboardMarkup([[
-            InlineKeyboardButton("⌯ ᴄʟᴏsᴇ ⌯", callback_data="close_data")
+            InlineKeyboardButton("⌯ 𝐂ʟᴏsᴇ ⌯", callback_data="close_data")
                               ]])
 
 
