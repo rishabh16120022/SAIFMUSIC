@@ -12,12 +12,12 @@ async def handwrite(_, message: Message):
         text = message.reply_to_message.text
     else:
         text =message.text.split(None, 1)[1]
-    m =await message.reply_text( "Please wait...,\n\nWriting your text...")
+    m =await message.reply_text( "ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...,\n\nᴡʀɪᴛɪɴɢ ʏᴏᴜʀ ᴛᴇxᴛ...")
     write = requests.get(f"https://apis.xditya.me/write?text={text}").url
 
     caption = f"""
 sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
-✨ ᴡʀɪᴛᴛᴇɴ ʙʏ : [𝐘ᴜᴍɪᴋᴏᴏ](https://t.me/{BOT_USERNAME})
+✨ ᴡʀɪᴛᴛᴇɴ ʙʏ : [Ηιƞαтα](https://t.me/{BOT_USERNAME})
 🥀 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}
 """
     await m.delete()
@@ -46,10 +46,10 @@ def date_to_day_command(client: Client, message: Message):
             day_of_week = date_object.strftime("%A")
 
             # Reply with the day of the week
-            message.reply_text(f"The day of the week for {input_date} is {day_of_week}.")
+            message.reply_text(f"ᴛʜᴇ ᴅᴀʏ ᴏғ ᴛʜᴇ ᴡᴇᴇᴋ ғᴏʀ {input_date} ɪs {day_of_week}.")
 
         else:
-            message.reply_text("Please provide a valid date in the format `/day 1947-08-15` ")
+            message.reply_text("ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴠᴀʟɪᴅ ᴅᴀᴛᴇ ɪɴ ᴛʜᴇ ғᴏʀᴍᴀᴛ `/day 1947-08-15` ")
 
     except ValueError as e:
         message.reply_text(f"Error: {str(e)}")
