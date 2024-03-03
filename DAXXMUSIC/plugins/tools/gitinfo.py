@@ -17,7 +17,7 @@ async def daxxhub(_, message):
 @app.on_message(filters.command(["github", "git"]))
 async def github(_, message):
     if len(message.command) != 2:
-        await message.reply_text("/git DAXXTEAM")
+        await message.reply_text("/git sᴀɪғᴅᴇᴀᴅ")
         return
 
     username = message.text.split(None, 1)[1]
@@ -45,23 +45,23 @@ async def github(_, message):
 
                 caption = f"""ɢɪᴛʜᴜʙ ɪɴғᴏ ᴏғ {name}
                 
-ᴜsᴇʀɴᴀᴍᴇ: {username}
-ʙɪᴏ: {bio}
-ʟɪɴᴋ: [Here]({url})
-ᴄᴏᴍᴩᴀɴʏ: {company}
-ᴄʀᴇᴀᴛᴇᴅ ᴏɴ: {created_at}
-ʀᴇᴩᴏsɪᴛᴏʀɪᴇs: {repositories}
-ʙʟᴏɢ: {blog}
-ʟᴏᴄᴀᴛɪᴏɴ: {location}
-ғᴏʟʟᴏᴡᴇʀs: {followers}
-ғᴏʟʟᴏᴡɪɴɢ: {following}"""
+𝐔sᴇʀɴᴀᴍᴇ: {username}
+𝐁ɪᴏ: {bio}
+𝐋ɪɴᴋ: [Here]({url})
+𝐂ᴏᴍᴩᴀɴʏ: {company}
+𝐂ʀᴇᴀᴛᴇᴅ 𝐎ɴ: {created_at}
+𝐑ᴇᴩᴏsɪᴛᴏʀɪᴇs: {repositories}
+𝐁ʟᴏɢ: {blog}
+𝐋ᴏᴄᴀᴛɪᴏɴ: {location}
+𝐅ᴏʟʟᴏᴡᴇʀs: {followers}
+𝐅ᴏʟʟᴏᴡɪɴɢ: {following}"""
 
             except Exception as e:
                 print(str(e))
                 pass
 
     # Create an inline keyboard with a close button
-    close_button = InlineKeyboardButton("Close", callback_data="close")
+    close_button = InlineKeyboardButton("𝐂lose", callback_data="close")
     inline_keyboard = InlineKeyboardMarkup([[close_button]])
 
     # Send the message with the inline keyboard
