@@ -50,7 +50,7 @@ async def upscale_image(app, message):
 
 waifu_api_url = 'https://api.waifu.im/search'
 
-# IAM_DAXX
+# SAIF_DICTATOR
 
 def get_waifu_data(tags):
     params = {
@@ -76,7 +76,7 @@ def waifu_command(client, message):
             image_url = first_image['url']
             message.reply_photo(image_url)
         else:
-            message.reply_text("No waifu found with the specified tags.")
+            message.reply_text("ɴᴏ ᴡᴀɪғᴜ ғᴏᴜɴᴅ with ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ ᴛᴀɢs.")
 
     except Exception as e:
-        message.reply_text(f"An error occurred: {str(e)}")
+        message.reply_text(f"ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ: {str(e)}")
