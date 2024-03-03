@@ -9,10 +9,10 @@ from DAXXMUSIC import app
 async def tiny_sticker(client, message):
     reply = message.reply_to_message
     if not (reply and reply.sticker):
-        await message.reply("Please reply to a sticker")
+        await message.reply("ᴘʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ")
         return
-    kontol = await message.reply("Processing please wait")
-    await kontol.edit_text("🐾")
+    kontol = await message.reply("ᴘʀᴏᴄᴇssɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ")
+    await kontol.edit_text("👅")
     ik = await app.download_media(reply)
     im1 = Image.open("DAXXMUSIC/assets/mohit.png")
     if ik.endswith(".tgs"):
