@@ -10,11 +10,18 @@ from typing import Union, Optional
 import random
 
 random_photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+    "https://te.legra.ph/file/0e52c40be2b6fc8d092ce.jpg",
+    "https://te.legra.ph/file/fc4f74e7019cb255702d8.jpg",
+    "https://te.legra.ph/file/84628c1ceebc5c52a01cc.jpg",
+    "https://te.legra.ph/file/35d55e85606c45f9bb138.jpg",
+    "https://te.legra.ph/file/8584dc1c4ed3e5b94dd2c.jpg",
+    "https://te.legra.ph/file/abe141eb82545f195c9b6.jpg",
+    "https://te.legra.ph/file/6d6b11300cfa55ca764c2.jpg",
+    "https://te.legra.ph/file/358f10a958b40b8984d07.jpg",
+    "https://te.legra.ph/file/fa644d12edfa174efb6a9.jpg",
+    "https://te.legra.ph/file/28dfe06f4652caa3b06b8.jpg",
+    "https://te.legra.ph/file/1a561d189d4f1470647ec.jpg",
+    "https://te.legra.ph/file/77ddcdb1f83e1a385836c.jpg",
 ]
 
 # --------------------------------------------------------------------------------- #
@@ -76,14 +83,14 @@ INFO_TEXT = """**
 ❅─────✧❅✦❅✧─────❅
             ✦ ᴜsᴇʀ ɪɴғᴏ ✦
 
-➻ ᴜsᴇʀ ɪᴅ ‣ **`{}`
-**➻ ғɪʀsᴛ ɴᴀᴍᴇ ‣ **{}
-**➻ ʟᴀsᴛ ɴᴀᴍᴇ ‣ **{}
-**➻ ᴜsᴇʀɴᴀᴍᴇ ‣ **`{}`
-**➻ ᴍᴇɴᴛɪᴏɴ ‣ **{}
-**➻ ʟᴀsᴛ sᴇᴇɴ ‣ **{}
-**➻ ᴅᴄ ɪᴅ ‣ **{}
-**➻ ʙɪᴏ ‣ **`{}`
+➻ 𝐔sᴇʀ 𝐈ᴅ ‣ **`{}`
+**➻ 𝐅ɪʀsᴛ 𝐍ᴀᴍᴇ ‣ **{}
+**➻ 𝐋ᴀsᴛ 𝐍ᴀᴍᴇ ‣ **{}
+**➻ 𝐔sᴇʀɴᴀᴍᴇ ‣ **`{}`
+**➻ 𝐌ᴇɴᴛɪᴏɴ ‣ **{}
+**➻ 𝐋ᴀsᴛ 𝐒ᴇᴇɴ ‣ **{}
+**➻ 𝐃ᴄ 𝐈ᴅ ‣ **{}
+**➻ 𝐁ɪᴏ ‣ **`{}`
 
 **❅─────✧❅✦❅✧─────❅**
 """
@@ -126,10 +133,10 @@ async def userinfo(_, message):
             id = user_info.id
             dc_id = user.dc_id
             first_name = user_info.first_name 
-            last_name = user_info.last_name if user_info.last_name else "No last name"
-            username = user_info.username if user_info.username else "No Username"
+            last_name = user_info.last_name if user_info.last_name else "ɴᴏ ʟᴀsᴛ ɴᴀᴍᴇ"
+            username = user_info.username if user_info.username else "ɴᴏ ᴜsᴇʀɴᴀᴍᴇ"
             mention = user.mention
-            bio = user_info.bio if user_info.bio else "No bio set"
+            bio = user_info.bio if user_info.bio else "ɴᴏ ʙɪᴏ sᴇᴛ"
             
             if user.photo:
                 # User has a profile photo
@@ -157,8 +164,8 @@ async def userinfo(_, message):
             id = user_info.id
             dc_id = user.dc_id
             first_name = user_info.first_name 
-            last_name = user_info.last_name if user_info.last_name else "No last name"
-            username = user_info.username if user_info.username else "No Username"
+            last_name = user_info.last_name if user_info.last_name else "ɴᴏ ʟᴀsᴛ ɴᴀᴍᴇ"
+            username = user_info.username if user_info.username else "ɴᴏ ᴜsᴇʀɴᴀᴍᴇ"
             mention = user.mention
             bio = user_info.bio if user_info.bio else "No bio set"
             
@@ -189,10 +196,10 @@ async def userinfo(_, message):
             id = user_info.id
             dc_id = user.dc_id
             first_name = user_info.first_name 
-            last_name = user_info.last_name if user_info.last_name else "No last name"
-            username = user_info.username if user_info.username else "No Username"
+            last_name = user_info.last_name if user_info.last_name else "ɴᴏ ʟᴀsᴛ ɴᴀᴍᴇ"
+            username = user_info.username if user_info.username else "ɴᴏ ᴜsᴇʀɴᴀᴍᴇ"
             mention = user.mention
-            bio = user_info.bio if user_info.bio else "No bio set"
+            bio = user_info.bio if user_info.bio else "ɴᴏ ʙɪᴏ sᴇᴛ"
             
             if user.photo:
                 # User has a profile photo
