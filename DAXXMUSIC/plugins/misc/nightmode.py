@@ -33,7 +33,7 @@ buttons = InlineKeyboardMarkup([[InlineKeyboardButton("๏ ᴇɴᴀʙʟᴇ ๏",
 
 @app.on_message(filters.command("nightmode") & filters.group)
 async def _nightmode(_, message):
-    return await message.reply_photo(photo="https://telegra.ph//file/06649d4d0bbf4285238ee.jpg", caption="**ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪsᴀʙʟᴇ ɴɪɢʜᴛᴍᴏᴅᴇ ɪɴ ᴛʜɪs ᴄʜᴀᴛ.**",reply_markup=buttons)
+    return await message.reply_photo(photo="https://te.legra.ph/file/1a561d189d4f1470647ec.jpg", caption="**ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪsᴀʙʟᴇ ɴɪɢʜᴛᴍᴏᴅᴇ ɪɴ ᴛʜɪs ᴄʜᴀᴛ.**",reply_markup=buttons)
               
      
 @app.on_callback_query(filters.regex("^(add_night|rm_night)$"))
@@ -72,13 +72,13 @@ async def start_nightmode() :
         try:
             await app.send_photo(
                 add_chat,
-                photo="https://telegra.ph//file/06649d4d0bbf4285238ee.jpg",
+                photo="https://te.legra.ph/file/0e52c40be2b6fc8d092ce.jpg",
                 caption= f"**ᴍᴀʏ ᴛʜᴇ ᴀɴɢᴇʟs ғʀᴏᴍ ʜᴇᴀᴠᴇɴ ʙʀɪɴɢ ᴛʜᴇ sᴡᴇᴇᴛᴇsᴛ ᴏғ ᴀʟʟ ᴅʀᴇᴀᴍs ғᴏʀ ʏᴏᴜ. ᴍᴀʏ ʏᴏᴜ ʜᴀᴠᴇ ʟᴏɴɢ ᴀɴᴅ ʙʟɪssғᴜʟ sʟᴇᴇᴘ ғᴜʟʟ ᴏғ ʜᴀᴘᴘʏ ᴅʀᴇᴀᴍs.\n\nɢʀᴏᴜᴘ ɪs ᴄʟᴏsɪɴɢ ɢᴏᴏᴅ ɴɪɢʜᴛ ᴇᴠᴇʀʏᴏɴᴇ  !**")
             
             await app.set_chat_permissions(add_chat,CLOSE_CHAT)
 
         except Exception as e:
-            print(f"[bold red] Unable To close Group {add_chat} - {e}")
+            print(f"[bold red] ᴜɴᴀʙʟᴇ ᴛᴏ ᴄʟᴏsᴇ ɢʀᴏᴜᴘ {add_chat} - {e}")
 
 scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
 scheduler.add_job(start_nightmode, trigger="cron", hour=23, minute=59)
@@ -95,15 +95,15 @@ async def close_nightmode():
         try:
             await app.send_photo(
                 rm_chat,
-                photo="https://telegra.ph//file/14ec9c3ff42b59867040a.jpg",
+                photo="https://te.legra.ph/file/35d55e85606c45f9bb138.jpg",
                 caption= f"**ɢʀᴏᴜᴘ ɪs ᴏᴘᴇɴɪɴɢ ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ᴇᴠᴇʀʏᴏɴᴇ !\n\nᴍᴀʏ ᴛʜɪs ᴅᴀʏ ᴄᴏᴍᴇ ᴡɪᴛʜ ᴀʟʟ ᴛʜᴇ ʟᴏᴠᴇ ʏᴏᴜʀ ʜᴇᴀʀᴛ ᴄᴀɴ ʜᴏʟᴅ ᴀɴᴅ ʙʀɪɴɢ ʏᴏᴜ ᴇᴠᴇʀʏ sᴜᴄᴄᴇss ʏᴏᴜ ᴅᴇsɪʀᴇ. Mᴀʏ ᴇᴀᴄʜ ᴏғ ʏᴏᴜʀ ғᴏᴏᴛsᴛᴇᴘs ʙʀɪɴɢ Jᴏʏ ᴛᴏ ᴛʜᴇ ᴇᴀʀᴛʜ ᴀɴᴅ ʏᴏᴜʀsᴇʟғ. ɪ ᴡɪsʜ ʏᴏᴜ ᴀ ᴍᴀɢɪᴄᴀʟ ᴅᴀʏ ᴀɴᴅ ᴀ ᴡᴏɴᴅᴇʀғᴜʟ ʟɪғᴇ ᴀʜᴇᴀᴅ.**")
             
             await app.set_chat_permissions(rm_chat,OPEN_CHAT)
 
         except Exception as e:
-            print(f"[bold red] Unable To open Group {rm_chat} - {e}")
+            print(f"[bold red] ᴜɴᴀʙʟᴇ ᴛᴏ ᴏᴘᴇɴ ɢʀᴏᴜᴘ {rm_chat} - {e}")
 
-scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
+scheduler = AsyncIOScheduler(timezone="ᴀsɪᴀ/ᴋᴏʟᴋᴀᴛᴀ")
 scheduler.add_job(close_nightmode, trigger="cron", hour=6, minute=1)
 scheduler.start()
 
