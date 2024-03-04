@@ -13,10 +13,10 @@ async def bored_command(client, message):
     response = requests.get(bored_api_url)
     if response.status_code == 200:
         data = response.json()
-        activity = data.get("activity")
+        activity = data.get("ᴀᴄᴛɪᴠɪᴛʏ")
         if activity:
             # Send the activity to the user who triggered the command
-            await message.reply(f"𝗙𝗲𝗲𝗹𝗶𝗻𝗴 𝗯𝗼𝗿𝗲𝗱? 𝗛𝗼𝘄 𝗮𝗯𝗼𝘂𝘁:\n\n {activity}")
+            await message.reply(f"ғᴇʟʟɪɴɢ ʙᴏʀᴇᴅ? ʜᴏᴡ ᴀʙᴏᴜᴛ:\n\n {activity}")
         else:
             await message.reply("Nᴏ ᴀᴄᴛɪᴠɪᴛʏ ғᴏᴜɴᴅ.")
     else:
