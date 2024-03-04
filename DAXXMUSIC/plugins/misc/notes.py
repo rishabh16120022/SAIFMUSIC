@@ -18,7 +18,7 @@ async def _save(client, message):
         return await message.reply_text("you need to give the note a name!")
     
     if not message.reply_to_message and not len(message.command) >= 3:
-        return await message.reply_text("You need to give the note some content!")
+        return await message.reply_text("ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ɢɪᴠᴇ the ɴᴏᴛᴇ sᴏᴍᴇ ᴄᴏɴᴛᴇɴᴛ!")
     
     NoteName = message.command[1]
     Content, Text, DataType = GetNoteMessage(message)
@@ -33,10 +33,10 @@ async def _save(client, message):
 async def _getnote(client, message):
     chat_id = message.chat.id
     if not len(message.command) >= 2:
-        return await message.reply_text("You need to give the note a name!")  
+        return await message.reply_text("ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ɢɪᴠᴇ ᴛʜᴇ ɴᴏᴛᴇ a ɴᴀᴍᴇ!")  
     note_name = message.command[1]
     if not await isNoteExist(chat_id, note_name):
-         return await message.reply_text("Note not found")
+         return await message.reply_text("ɴᴏᴛᴇ ɴᴏᴛ ғᴏᴜɴᴅ")
     await send_note(message, note_name)
     
 
@@ -62,7 +62,7 @@ async def PrivateNote(client, message):
         ):
             await set_private_note(chat_id, True)
             await message.reply(
-                "Now i will send a message to your chat with a button redirecting to PM, where the user will receive the note.",
+                "ɴᴏᴡ ɪ ᴡɪʟʟ sᴇɴᴅ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ᴡɪᴛʜ ᴀ ʙᴜᴛᴛᴏɴ ʀᴇᴅɪʀᴇᴄᴛɪɴɢ ᴛᴏ ᴘᴍ, ᴡʜᴇʀᴇ ᴛʜᴇ ᴜsᴇʀ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴛʜᴇ ɴᴏᴛᴇ.",
                 quote=True
             )
 
@@ -71,12 +71,12 @@ async def PrivateNote(client, message):
         ):
             await set_private_note(chat_id, False)
             await message.reply(
-                "I will now send notes straight to the group.",
+                "ɪ ᴡɪʟʟ ɴᴏᴡ sᴇɴᴅ ɴᴏᴛᴇs sᴛʀᴀɪɢʜᴛ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ.",
                 quote=True
             )  
         else:
             await message.reply(
-                f"failed to get boolean value from input:\n\n expected one of y/yes/on/true or n/no/off/false; got: {message.command[1]}",
+                f"ғᴀɪʟᴇᴅ ᴛᴏ ɢᴇᴛ ʙᴏᴏʟᴇᴀɴ ᴠᴀʟᴜᴇ ғʀᴏᴍ ɪɴᴘᴜᴛ:\n\n ᴇxᴘᴇᴄᴛᴇᴅ ᴏɴᴇ ᴏғ y/yes/on/true or n/no/off/false; got: {message.command[1]}",
                 quote=True
             )
     else:
@@ -127,7 +127,7 @@ async def ClearAll_Note(client, message):
     chat_title = message.chat.title
     user = await client.get_chat_member(chat_id,owner_id)
     if not user.status == ChatMemberStatus.OWNER :
-        return await message.reply_text("Only Owner Can Use This!!") 
+        return await message.reply_text("ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴜsᴇ ᴛʜɪs!!") 
 
     note_list = await NoteList(chat_id)
     if note_list == 0:
@@ -137,10 +137,10 @@ async def ClearAll_Note(client, message):
         )
     keyboard = InlineKeyboardMarkup(
         [[
-            InlineKeyboardButton(text='Delete all notes', callback_data=f'clearallnotes_clear_{owner_id}_{chat_id}')
+            InlineKeyboardButton(text='ᴅᴇʟᴇᴛᴇ ᴀʟʟ ɴᴏᴛᴇs', callback_data=f'clearallnotes_clear_{owner_id}_{chat_id}')
         ],
         [
-            InlineKeyboardButton(text='Cancel', callback_data=f'clearallnotes_cancel_{owner_id}')
+            InlineKeyboardButton(text='𝐂ᴀɴᴄʟᴇ', callback_data=f'clearallnotes_cancel_{owner_id}')
         ]]
     )
     await message.reply(
@@ -230,7 +230,7 @@ async def PrivateNoteButton(message, chat_id, NoteName):
     PrivateNoteButton = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text='Click me!', url=f'http://t.me/{BOT_USERNAME}?start=note_{chat_id}_{NoteName}')
+                InlineKeyboardButton(text='𝐂ʟɪᴄᴋ 𝐌ᴇ!', url=f'http://t.me/{BOT_USERNAME}?start=note_{chat_id}_{NoteName}')
             ]
         ]
     )
@@ -242,16 +242,8 @@ async def PrivateNoteButton(message, chat_id, NoteName):
 
 #
 """**                                                                         
-────────────────────────────────────────────────────────────────────────
-─████████████────██████████████──████████──████████──████████──████████─
-─██░░░░░░░░████──██░░░░░░░░░░██──██░░░░██──██░░░░██──██░░░░██──██░░░░██─
-─██░░████░░░░██──██░░██████░░██──████░░██──██░░████──████░░██──██░░████─
-─██░░██──██░░██──██░░██──██░░██────██░░░░██░░░░██──────██░░░░██░░░░██───
-─██░░██──██░░██──██░░██████░░██────████░░░░░░████──────████░░░░░░████───
-─██░░██──██░░██──██░░░░░░░░░░██──────██░░░░░░██──────────██░░░░░░██─────
-─██░░██──██░░██──██░░██████░░██────████░░░░░░████──────████░░░░░░████───
-─██░░██──██░░██──██░░██──██░░██────██░░░░██░░░░██──────██░░░░██░░░░██───
-─██░░████░░░░██──██░░██──██░░██──████░░██──██░░████──████░░██──██░░████─
-─██░░░░░░░░████──██░░██──██░░██──██░░░░██──██░░░░██──██░░░░██──██░░░░██─
-─████████████────██████──██████──████████──████████──████████──████████─
+────────────────────────────────────────────────────────────────────
+
+                 🇸 🇦 🇮 🇫  🇩 🇪 🇦 🇩  🇴 🇵  🇧 🇴 🇱  🇧 🇸 🇩 🇰 
+
 ────────────────────────────────────────────────────────────────────────**"""
