@@ -27,7 +27,7 @@ async def get_group_status(_, message: Message):
         f"➲ TOTAL MEMBERS : {total_members}\n"
         f"➲ DESCRIPTION : {group_description or 'N/A'}\n"
         f"➲ USERNAME : @{group_username}\n"
-        f"❣ 𝗗ᴇᴀᴅ : @SAIF_DICTATOR
+        f"❣ 𝗗ᴇᴀᴅ : [𝐃ᴇᴀᴅ](https://t.me/Saif_Dictator)
         f"➖➖➖➖➖➖➖"
     )
     
