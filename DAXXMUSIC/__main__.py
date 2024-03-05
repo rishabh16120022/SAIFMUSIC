@@ -40,7 +40,7 @@ async def init():
     await userbot.start()
     await DAXX.start()
     try:
-        await DAXX.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await DAXX.stream_call("https://te.legra.ph/file/1f8f69dbd6be383425929.jpg")
     except NoActiveGroupCall:
         LOGGER("DAXXMUSIC").error(
             "ᴘʟᴇᴀsᴇ sᴛᴀʀᴛ ᴠᴄ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ\ᴄʜᴀɴɴᴇʟ\n\nᴍᴜsɪᴄ ʙᴏᴛ sᴛᴏᴘᴇᴅ........"
