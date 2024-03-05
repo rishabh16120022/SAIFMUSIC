@@ -12,7 +12,7 @@
 GO TO [RELOAD.PY](https://github.com/SAIFDEAD/DAXXMUSIC/blob/Master/DAXXMUSIC/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
 
 <p align="center">
-  <img src="https://te.legra.ph/file/358f10a958b40b8984d07.jpg">
+  <img src="https://te.legra.ph/file/030e1ec8d895acd51bf1f.jpg>
 </p>
 
 <p align="center">
