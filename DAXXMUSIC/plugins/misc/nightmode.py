@@ -103,7 +103,7 @@ async def close_nightmode():
         except Exception as e:
             print(f"[bold red] ᴜɴᴀʙʟᴇ ᴛᴏ ᴏᴘᴇɴ ɢʀᴏᴜᴘ {rm_chat} - {e}")
 
-scheduler = AsyncIOScheduler(timezone="ᴀsɪᴀ/ᴋᴏʟᴋᴀᴛᴀ")
+scheduler = AsyncIOScheduler(timezone="Asia/kolkata")
 scheduler.add_job(close_nightmode, trigger="cron", hour=6, minute=1)
 scheduler.start()
 
