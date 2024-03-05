@@ -556,7 +556,7 @@ class Call(PyTgCalls):
         return str(round(sum(pings) / len(pings), 3))
 
     async def start(self):
-        LOGGER(__name__).info("Starting PyTgCalls Client...\n")
+        LOGGER(__Hinata_).info("Starting PyTgCalls Client...\n")
         if config.STRING1:
             await self.one.start()
         if config.STRING2:
