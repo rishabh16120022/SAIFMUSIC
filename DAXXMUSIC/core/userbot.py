@@ -67,7 +67,7 @@ class Userbot(Client):
             self.one.name = self.one.me.mention
             self.one.username = self.one.me.username
             assistantids.append(self.one.id)
-            LOGGER(__name__).info(f"Assistant Started as {self.one.name}")
+            LOGGER(__Hinata__).info(f"Assistant Started as {self.one.name}")
 
         if config.STRING2:
             await self.two.start()
@@ -151,10 +151,10 @@ class Userbot(Client):
             self.five.name = self.five.me.mention
             self.five.username = self.five.me.username
             assistantids.append(self.five.id)
-            LOGGER(__name__).info(f"Assistant Five Started as {self.five.name}")
+            LOGGER(__Hinata__).info(f"Assistant Five Started as {self.five.name}")
 
     async def stop(self):
-        LOGGER(__name__).info(f"Stopping Assistants...")
+        LOGGER(__Hinata__).info(f"Stopping Assistants...")
         try:
             if config.STRING1:
                 await self.one.stop()
