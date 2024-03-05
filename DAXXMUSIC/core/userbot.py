@@ -47,17 +47,17 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"Starting Assistants...")
+        LOGGER(__name__).info(f"sᴛᴀʀᴛɪɴɢ ᴀssɪsᴛᴀɴᴛs ᴏғ ʜɪɴᴀᴛᴀ ᴍᴜsɪᴄ ʙᴏᴛ...")
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("ALLTYPECC")
-                await self.one.join_chat("DAXXSUPPORT")
+                await self.one.join_chat("SAIFHELPGC")
+                await self.one.join_chat("SAIFALLBOT")
             except:
                 pass
             assistants.append(1)
             try:
-                await self.one.send_message(config.LOGGER_ID, "Assistant Started")
+                await self.one.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ ᴏғ ʜɪɴᴀᴛᴀ ᴍᴜsɪᴄ ʜᴀs ʙᴇᴇɴ sᴛᴀʀᴛᴇᴅ")
             except:
                 LOGGER(__name__).error(
                     "Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
@@ -72,8 +72,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("ALLTYPECC")
-                await self.one.join_chat("DAXXSUPPORT")
+                await self.two.join_chat("SAIFHELPGC")
+                await self.one.join_chat("SAIFALLBOT")
             except:
                 pass
             assistants.append(2)
@@ -93,8 +93,8 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("ALLTYPECC")
-                await self.one.join_chat("DAXXSUPPORT")
+                await self.three.join_chat("SAIFHELPGC")
+                await self.one.join_chat("SAIFALLBOT")
             except:
                 pass
             assistants.append(3)
@@ -114,8 +114,8 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("ALLTYPECC")
-                await self.one.join_chat("DAXXSUPPORT")
+                await self.four.join_chat("SAIFHELPGC")
+                await self.one.join_chat("SAIFALLBOT")
             except:
                 pass
             assistants.append(4)
@@ -135,8 +135,8 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("ALLTYPECC")
-                await self.one.join_chat("DAXXSUPPORT")
+                await self.five.join_chat("SAIFALLBOT")
+                await self.one.join_chat("SAIFHELPGC")
             except:
                 pass
             assistants.append(5)
