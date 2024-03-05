@@ -18,7 +18,7 @@ async def _filter(client, message):
         message.reply_to_message
         and not len(message.command) == 2
     ):
-        await message.reply("ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ɢɪᴠᴇ ᴛʜᴇ ғɪʟᴛᴇʀ ᴀ ɴᴀᴍᴇ!")  
+        await message.reply("You need to give the filter a name!")  
         return 
     
     filter_name, filter_reason = get_text_reason(message)
@@ -26,7 +26,7 @@ async def _filter(client, message):
         message.reply_to_message
         and not len(message.command) >=2
     ):
-        await message.reply("ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ɢɪᴠᴇ ᴛʜᴇ ғɪʟᴛᴇʀ sᴏᴍᴇ ᴄᴏɴᴛᴇɴᴛ!")
+        await message.reply("You need to give the filter some content!")
         return
 
     content, text, data_type = await GetFIlterMessage(message)
@@ -102,12 +102,12 @@ async def stopall(client, message):
         return await message.reply_text("ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴜsᴇ ᴛʜɪs!!") 
 
     KEYBOARD = InlineKeyboardMarkup(
-        [[InlineKeyboardButton(text='ᴅᴇʟᴇᴛᴇ ᴀʟʟ ғɪʟᴛᴇʀs', callback_data='custfilters_stopall')],
+        [[InlineKeyboardButton(text='Delete all filters', callback_data='custfilters_stopall')],
         [InlineKeyboardButton(text='Cancel', callback_data='custfilters_cancel')]]
     )
 
     await message.reply(
-        text=(ғ'ᴀʀᴇ ʏᴏᴜ sᴜʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴛᴏᴘ **ALL** filters in {chat_title}? ᴛʜɪs ᴀᴄᴛɪᴏɴ ɪs ɪʀʀᴇᴠᴇʀsɪʙʟᴇ.'),
+        text=(f'Are you sure you want to stop **ALL** filters in {chat_title}? This action is irreversible.'),
         reply_markup=KEYBOARD
     )
 
@@ -136,7 +136,7 @@ async def stopall_callback(client, callback_query: CallbackQuery):
 async def stop(client, message):
     chat_id = message.chat.id
     if not (len(message.command) >= 2):
-        await message.reply('ᴜsᴇ ʜᴇʟᴘ To ᴋɴᴏᴡ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ᴜsᴀɢᴇ')
+        await message.reply('Use Help To Know The Command Usage')
         return
     
     filter_name = message.command[1]
@@ -145,4 +145,4 @@ async def stop(client, message):
         return
     
     await stop_db(chat_id, filter_name)
-    await message.reply(f"I've stopped `{filter_name}`.")
+    await message.reply(f"ɪ'ᴠᴇ sᴛᴏᴘᴘᴇᴅ `{filter_name}`.")
