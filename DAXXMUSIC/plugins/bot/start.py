@@ -29,31 +29,18 @@ from strings import get_string
 #--------------------------
 
 NEXI_VID = [
-"https://te.legra.ph/file/18a754b9c1df61427992e.jpg",
-"https://te.legra.ph/file/68a5a003282b353609828.jpg",
-"https://te.legra.ph/file/fa87b2f47ed6d2a2641f6.jpg",
-"https://te.legra.ph/file/7e5d608a1437fabc22fca.jpg",
-"https://te.legra.ph/file/0e52c40be2b6fc8d092ce.jpg",
-"https://te.legra.ph/file/fc4f74e7019cb255702d8.jpg",
-"https://te.legra.ph/file/1f8f69dbd6be383425929.jpg",
-"https://te.legra.ph/file/f4f57c093a37338a92e15.jpg",
-"https://te.legra.ph/file/030e1ec8d895acd51bf1f.jpg",
-"https://te.legra.ph/file/e19d8eb469721d4df03de.jpg",
-"https://te.legra.ph/file/77ddcdb1f83e1a385836c.jpg",
-"https://te.legra.ph/file/1a561d189d4f1470647ec.jpg",
-"https://te.legra.ph/file/610ee36e620d86422c13c.jpg",
-"https://te.legra.ph/file/3317f8331e0f4e0a4348a.jpg",
-"https://te.legra.ph/file/1ef296f0e545422c57747.jpg",
-"https://te.legra.ph/file/fa644d12edfa174efb6a9.jpg",
-"https://te.legra.ph/file/18aad7ea35f99603b3cf3.jpg",
-"https://te.legra.ph/file/18aad7ea35f99603b3cf3.jpg",
-"https://te.legra.ph/file/b3fc7f08dfe25e5951f08.jpg",
-"https://te.legra.ph/file/8584dc1c4ed3e5b94dd2c.jpg",
-"https://te.legra.ph/file/8719feedf475f42185c7a.jpg",
-"https://te.legra.ph/file/ef46323bd0a99826c1860.jpg",
-"https://te.legra.ph/file/a9a30166d484436b13276.jpg",
-"https://te.legra.ph/file/5a80607332f06333503a7.jpg",
-
+"https://te.legra.ph/file/829af4db848bf620581dd.mp4",
+"https://te.legra.ph/file/f1c729a37eac14ceb7d3b.mp4",
+"https://te.legra.ph/file/ca90413f8325ab6e21978.mp4",
+"https://te.legra.ph/file/0ccd573017b451f831796.mp4",
+"https://te.legra.ph/file/eaf33062abc417b4df75f.mp4",
+"https://te.legra.ph/file/1865a964ad12de215beff.mp4",
+"https://te.legra.ph/file/635f724d969589eefa167.mp4",
+"https://te.legra.ph/file/e37f113f43c08b5ff0147.mp4",
+"https://te.legra.ph/file/9a44a49dddc53986db3d4.mp4",
+"https://te.legra.ph/file/6b5c22181bd6bb1aa651b.mp4",
+"https://te.legra.ph/file/5ca485c5dc480ae1ed9bf.mp4",
+    
 ]
 
 
