@@ -17,13 +17,13 @@ from config import BANNED_USERS
 async def ping_com(client, message: Message, _):
     start = datetime.now()
     response = await message.reply_video(
-        video="https://telegra.ph/file/83fbc88910c7497bc2ef6.mp4",
+        video="https://telegra.ph/file/f27ff2fc84f8c8ac36153.mp4",
         caption=_["ping_1"].format(app.mention),
     )
     pytgping = await DAXX.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(
-        _["ping_2"].format(resp, app.mention, UP, RAM, CPU, DISK),
+        _["ping_2"].format(resp, app.mention, UP, RAM, CPU, DISK, ),
         reply_markup=supp_markup(_),
     )
