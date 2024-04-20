@@ -36,7 +36,7 @@ async def purge(app: app, msg: Message):
         except RPCError as ef:
             await msg.reply_text(text=f"**sᴏᴍᴇ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ, ʀᴇᴘᴏʀᴛ ɪᴛ ᴜsɪɴɢ** `/bug`<b>ᴇʀʀᴏʀ:</b> <code>{ef}</code>")
         count_del_msg = len(message_ids)
-        sumit = await msg.reply_text(text=f"ᴅᴇʟᴇᴛᴇᴅ <i>{count_del_msg}</i> ᴍᴇssᴀɢᴇs")
+        sumit = await msg.reply_text(text=f"𝐃ᴇʟᴇᴛᴇᴅ <i>{count_del_msg}</i> 𝐌ᴇssᴀɢᴇs")
         await sleep(3)
         await sumit.delete()
         return
@@ -89,5 +89,4 @@ async def del_msg(app: app, msg: Message):
     else:
         await msg.reply_text(text="**ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴇʟᴇᴛᴇ.**")
         return
-
 
