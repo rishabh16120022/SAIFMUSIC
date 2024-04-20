@@ -30,7 +30,7 @@ async def unpin_callbacc(client, CallbackQuery):
             await CallbackQuery.answer("You dont have rights, baka!", show_alert=True)
             return
     else:
-        await CallbackQuery.answer("You dont have rights, baka!", show_alert=True)
+        await CallbackQuery.answer("You dont have rights, balk!", show_alert=True)
         return
     
     msg_id = CallbackQuery.data.split("=")[1]
@@ -47,7 +47,7 @@ async def unpin_callbacc(client, CallbackQuery):
             textt,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text="Delete", callback_data="delete_btn=admin")]
+                    [InlineKeyboardButton(text="𝐃ᴇʟᴇᴛᴇ", callback_data="delete_btn=admin")]
                 ]
             )
         )
@@ -58,7 +58,7 @@ async def unpin_callbacc(client, CallbackQuery):
         "unpinned!!", 
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton(text="Delete", callback_data="delete_btn=admin")]
+                [InlineKeyboardButton(text="𝐃ᴇʟᴇᴛᴇ", callback_data="delete_btn=admin")]
             ]
         )
     )
@@ -86,8 +86,8 @@ async def unpin_command_handler(client, message):
         reply_markup=InlineKeyboardMarkup(
             [   
                 [
-                    InlineKeyboardButton(text="𝗬𝗘𝗦", callback_data="unpinall=yes"),
-                    InlineKeyboardButton(text="𝗡𝗢", callback_data="unpinall=no")
+                    InlineKeyboardButton(text="𝗬𝐞𝐬", callback_data="unpinall=yes"),
+                    InlineKeyboardButton(text="𝗡𝐨", callback_data="unpinall=no")
                 ]
             ]
         )
