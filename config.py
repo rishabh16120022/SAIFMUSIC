@@ -18,7 +18,7 @@ OWNER_USERNAME = getenv("OWNER_USERNAME","SAIF_DICTATOR")
 # --------------------------------------------------------
 BOT_USERNAME = getenv("BOT_USERNAME" , "HINATA_N_BOT")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "𝐇ιиαтα 𝗫 𝐌ʋƨιc")
+BOT_NAME = getenv("BOT_NAME" , "𝐇ιиαтα 𝗫 𝐑σвσт")
 # ---------------------------------------------------------
 ASSUSERNAME = getenv("ASSUSERNAME" , "Naruto_for_Hinata")
 # ---------------------------------------------------------
@@ -38,7 +38,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 99999))
 LOGGER_ID = int(getenv("LOGGER_ID", -1002113423068))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 6585111267))
+OWNER_ID = int(getenv("OWNER_ID", 7117906157)
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -53,7 +53,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/SAIFDEAD/MUSIC1",
+    "https://github.com/SAIFDEAD/SAIFMUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
@@ -68,7 +68,7 @@ GIT_TOKEN = getenv(
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SAIFALLBOT")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/SAIFHELPGC")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DEAD_GRPCHAT")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
