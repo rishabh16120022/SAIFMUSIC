@@ -36,7 +36,7 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("DAXXMUSIC.plugins" + all_module)
-    LOGGER("DAXXMUSIC.plugins").info("ᴀʟʟ ғᴜɴᴄᴛɪᴏɴ ʟᴏᴀᴅᴇᴅ ʙᴀʙᴜ ♪...")
+    LOGGER("SAIFMUSIC.plugins").info("ᴀʟʟ ғᴜɴᴄᴛɪᴏɴ ʟᴏᴀᴅᴇᴅ ʙᴀʙᴜ ♪...")
     await userbot.start()
     await DAXX.start()
     try:
@@ -49,13 +49,13 @@ async def init():
     except:
         pass
     await DAXX.decorators()
-    LOGGER("DAXXMUSIC").info(
+    LOGGER("SAIFMUSIC").info(
         "╔═════𝗦𝗔𝗜𝗙════╗\n ᴛʜɪs ʀᴇᴘᴏ ɪs ᴍᴀᴅᴇ ᴍʏ sᴀɪғᴅᴇᴀᴅ\n╚═════𝗦𝗔𝗜𝗙════╝"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("DAXXMUSIC").info("ʙᴏᴛ sᴛᴏᴘᴇᴅ sᴜᴄᴇssғᴜʟʟʏ 😂..")
+    LOGGER("SAIFMUSIC").info("ʙᴏᴛ sᴛᴏᴘᴇᴅ sᴜᴄᴇssғᴜʟʟʏ 😂..")
 
 
 if __name__ == "__main__":
