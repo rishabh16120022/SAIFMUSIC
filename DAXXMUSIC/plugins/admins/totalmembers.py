@@ -29,9 +29,9 @@ def user_command(client, message):
 
 
 # Command handler for /givelink command
-@app.on_message(filters.command("givelink"))
+@app.on_message(filters.command("grplink"))
 async def give_link_command(client, message):
     # Generate an invite link for the chat where the command is used
     chat = message.chat.id
     link = await app.export_chat_invite_link(chat)
-    await message.reply_text(f"Here's the invite link for this chat:\n{link}")
+    await message.reply_text(f"𝐇𝐞𝐫𝐞'𝐬 𝐭𝐡𝐞 𝐢𝐧𝐯𝐢𝐭𝐞 𝐥𝐢𝐧𝐤 𝐟𝐨𝐫 𝐭𝐡𝐢𝐬 𝐜𝐡𝐚𝐭:\n{link}")
