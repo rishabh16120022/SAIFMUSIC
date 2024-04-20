@@ -23,11 +23,11 @@ async def must_join_channel(app: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply_photo(
-                    photo="https://te.legra.ph/file/8584dc1c4ed3e5b94dd2c.jpg", caption=f"๏ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ʏᴏᴜ'ᴠᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ [๏𝐒ᴜᴘᴘᴏʀᴛ๏]({link}) ʏᴇᴛ, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛʜᴇɴ ᴊᴏɪɴ [๏𝐒ᴜᴘᴘᴏʀᴛ๏]({link}) ᴀɴᴅ sᴛᴀʀᴛ ʜɪɴᴀᴛᴀ ʙᴏᴛ ᴀɢᴀɪɴ ᴛʜɪs ʀᴇᴘᴏ ɪs ᴍᴀᴅᴇ ᴍʏ [Ƥ𝗔Ƥ𝗔](https://t.me/SAIF_DICTATOR)! ",
+                    photo="https://te.legra.ph/file/8584dc1c4ed3e5b94dd2c.jpg", caption=f"๏ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ʏᴏᴜ'ᴠᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ [ ➣𝐒ᴜᴘᴘᴏʀᴛ]({link}) ʏᴇᴛ, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛʜᴇɴ ᴊᴏɪɴ [➥ 𝐒ᴜᴘᴘᴏʀᴛ]({link}) ᴀɴᴅ sᴛᴀʀᴛ ʜɪɴᴀᴛᴀ ʙᴏᴛ ᴀɢᴀɪɴ ᴛʜɪs ʀᴇᴘᴏ ɪs ᴍᴀᴅᴇ ʙʏ [⚡ 𝐒αιғβσтƨ ⚡](https://t.me/SAIF_DICTATOR)! ",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("๏𝐉ᴏɪɴ๏", url=link),
+                                InlineKeyboardButton("๏ 𝐉ᴏɪɴ ๏", url=link),
                             ]
                         ]
                     )
