@@ -110,6 +110,6 @@ async def mb_plugin_button(client, CallbackQuery):
     cb = callback_data.split(None, 1)[1]
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("𝐁ᴀᴄᴋ", callback_data=f"mbot_cb")]])
     if cb == "Okieeeeee":
-        await CallbackQuery.edit_message_text(f"`something errors`",reply_markup=keyboard,parse_mode=enums.ParseMode.MARKDOWN)
+        await CallbackQuery.edit_message_text(f"`sᴏᴍᴇᴛʜɪɴɢ ᴇʀʀᴏʀs`",reply_markup=keyboard,parse_mode=enums.ParseMode.MARKDOWN)
     else:
         await CallbackQuery.edit_message_text(getattr(Helper, cb), reply_markup=keyboard)
