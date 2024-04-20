@@ -29,18 +29,31 @@ from strings import get_string
 #--------------------------
 
 NEXI_VID = [
-"https://te.legra.ph/file/829af4db848bf620581dd.mp4",
-"https://te.legra.ph/file/f1c729a37eac14ceb7d3b.mp4",
-"https://te.legra.ph/file/ca90413f8325ab6e21978.mp4",
-"https://te.legra.ph/file/0ccd573017b451f831796.mp4",
-"https://te.legra.ph/file/eaf33062abc417b4df75f.mp4",
-"https://te.legra.ph/file/1865a964ad12de215beff.mp4",
-"https://te.legra.ph/file/635f724d969589eefa167.mp4",
-"https://te.legra.ph/file/e37f113f43c08b5ff0147.mp4",
-"https://te.legra.ph/file/9a44a49dddc53986db3d4.mp4",
-"https://te.legra.ph/file/6b5c22181bd6bb1aa651b.mp4",
-"https://te.legra.ph/file/5ca485c5dc480ae1ed9bf.mp4",
-    
+"https://telegra.ph/file/46d496dc442cd8049b2fa.mp4",
+"https://telegra.ph/file/c5f6d6896ebaf0d850ab3.mp4",
+"https://telegra.ph/file/f6b19dd9e27f8f497963e.mp4",
+"https://telegra.ph/file/83fbc88910c7497bc2ef6.mp4",
+"https://telegra.ph/file/52b5e88bf9d8112b766b8.mp4",
+"https://telegra.ph/file/5d776b46554f7ecfe765f.mp4",
+"https://telegra.ph/file/620d4218a3ba9a5451759.mp4",
+"https://telegra.ph/file/b909d9b2046ce61b2eff1.mp4",
+"https://telegra.ph/file/e3cb6fe731c94b0c72cd0.mp4",
+"https://telegra.ph/file/f27ff2fc84f8c8ac36153.mp4",
+"https://telegra.ph/file/24300a64d0be8c49cc563.mp4",
+"https://telegra.ph/file/e0c1e6842d8834bc47e31.mp4",
+"https://telegra.ph/file/35eaed4f2c1868eee3b74.mp4",
+"https://telegra.ph/file/0b14d85c896bb0f8b1294.mp4",
+"https://telegra.ph/file/7c2eb9496a2945e265be3.mp4",
+"https://telegra.ph/file/73ea250361f8c476cb2fa.mp4",
+"https://telegra.ph/file/69f47ca27c954373d408c.mp4",
+"https://telegra.ph/file/3695a9abf0dca95d80850.mp4",
+"https://telegra.ph/file/40f691268bff0b53211e8.mp4",
+"https://telegra.ph/file/da8e6902292d2eed900f2.mp4",
+"https://telegra.ph/file/ad57bd6404830e0a62996.mp4",
+"https://telegra.ph/file/97de731549c53adb7c600.mp4",
+"https://telegra.ph/file/01438d2b55837dbceb19f.mp4",
+"https://telegra.ph/file/5937666198f4912aaf408.mp4",
+
 ]
 
 
