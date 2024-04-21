@@ -42,3 +42,4 @@ def spam_command(client, message):
             time.sleep(0.2)  # Add a delay between spam messages
     else:
         message.reply_text("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴀɴᴅ ᴜsᴇ ᴛʜᴇ .raid ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ sᴘᴀᴍ.")
+        
