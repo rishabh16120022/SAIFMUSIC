@@ -41,3 +41,4 @@ def check_phone(client, message):
         send_message(message, g)
     except Exception as e:
         send_message(message, f"Error: {str(e)}")
+        
