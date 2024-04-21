@@ -52,7 +52,7 @@ async def sudoers_list(client, message: Message, _):
             count += 1
         except:
             continue
-        msg += f"{count}➤ {user}\n"
+        msg += f"{count}🥀 {user}\n"
     if count == 0:
         return await mystic.edit_text(_["block_5"])
     else:
