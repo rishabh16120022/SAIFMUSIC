@@ -7,7 +7,7 @@ from gpytranslate import Translator
 
 trans = Translator()
 
-#......
+#SAIFDEAD
 
 @app.on_message(filters.command("tr"))
 async def translate(_, message) -> None:
