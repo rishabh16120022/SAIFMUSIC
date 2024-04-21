@@ -264,7 +264,7 @@ async def msg_quotly_cmd(self: app, ctx: Message):
                     if not i.empty and not i.media
                 ]
             except Exception:
-                return await ctx.reply_text("🤷🏻‍♂️")
+                return await ctx.reply_text("😶")
             try:
                 make_quotly = await pyrogram_to_quotly(messages, is_reply=is_reply)
                 bio_sticker = BytesIO(make_quotly)
