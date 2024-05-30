@@ -5,11 +5,11 @@ from config import OWNER_ID
 # vc on
 @app.on_message(filters.video_chat_started)
 async def brah(_, msg):
-       await msg.reply("ᴠᴏɪᴄᴇ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ")
+       await msg.reply("𝐕𝐂 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 🌸")
 # vc off
 @app.on_message(filters.video_chat_ended)
 async def brah2(_, msg):
-       await msg.reply("**ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ**")
+       await msg.reply("**𝐕𝐂 𝐄𝐍𝐃𝐄𝐃 ⚠️**")
 
 # invite members on vc
 @app.on_message(filters.video_chat_members_invited)
@@ -23,7 +23,7 @@ async def brah3(app :app, message:Message):
              except Exception:
                pass
            try:
-             await message.reply(f"{text} 😉")
+             await message.reply(f"{text} 😽")
            except:
              pass
 
@@ -35,7 +35,7 @@ def calculate_math(client, message):
     expression = message.text.split("/math ", 1)[1]
     try:        
         result = eval(expression)
-        response = f"ᴛʜᴇ ʀᴇsᴜʟᴛ ɪs : {result}"
+        response = f"𝐓𝐡𝐞 𝐑𝐞𝐬𝐮𝐥𝐭 𝐈𝐬 : {result}"
     except:
         response = "ɪɴᴠᴀʟɪᴅ ᴇxᴘʀᴇssɪᴏɴ"
     message.reply(response)
@@ -54,7 +54,7 @@ async def bot_leave(_, message):
 
 @app.on_message(filters.command(["spg"], ["/", "!", "."]))
 async def search(event):
-    msg = await event.respond("sᴇᴀʀᴄʜɪɴɢ...")
+    msg = await event.respond("𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐛𝐚𝐛𝐞...")
     async with aiohttp.ClientSession() as session:
         start = 1
         async with session.get(f"https://content-customsearch.googleapis.com/customsearch/v1?cx=ec8db9e1f9e41e65e&q={event.text.split()[1]}&key=AIzaSyAa8yy0GdcGPHdtD083HiGGx_S0vMPScDM&start={start}", headers={"x-referer": "https://explorer.apis.google.com"}) as r:
@@ -62,7 +62,7 @@ async def search(event):
             result = ""
             
             if not response.get("items"):
-                return await msg.edit("ɴᴏ ʀᴇsᴜʟᴛs ғᴏᴜɴᴅ!")
+                return await msg.edit("𝐧𝐨 𝐑𝐞𝐬𝐮𝐥𝐭 𝐅𝐨𝐮𝐧𝐝!")
             for item in response["items"]:
                 title = item["title"]
                 link = item["link"]
