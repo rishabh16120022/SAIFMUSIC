@@ -20,7 +20,7 @@ async def _whisper(_, inline_query):
                 title="💒 Whisper",
                 description=f"@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]",
                 input_message_content=InputTextMessageContent(f"💒 Usage:\n\n@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]"),
-                thumb_url="https://te.legra.ph/file/0e52c40be2b6fc8d092ce.jpg",
+                thumb_url="https://telegra.ph/file/18605815b97d21199a9de.jpg",
                 reply_markup=switch_btn
             )
         ]
@@ -39,7 +39,7 @@ async def _whisper(_, inline_query):
                     title="💒 Whisper",
                     description="ɪɴᴠᴀʟɪᴅ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ!",
                     input_message_content=InputTextMessageContent("ɪɴᴠᴀʟɪᴅ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ!"),
-                    thumb_url="https://te.legra.ph/file/e19d8eb469721d4df03de.jpg",
+                    thumb_url="https://telegra.ph/file/18605815b97d21199a9de.jpg",
                     reply_markup=switch_btn
                 )
             ]
@@ -52,14 +52,14 @@ async def _whisper(_, inline_query):
                     title="💒 Whisper",
                     description=f"Send a Whisper to {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"💒 You are sending a whisper to {user.first_name}.\n\nType your message/sentence."),
-                    thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+                    thumb_url="https://telegra.ph/file/18605815b97d21199a9de.jpg",
                     reply_markup=whisper_btn
                 ),
                 InlineQueryResultArticle(
                     title="🔩 One-Time Whisper",
                     description=f"Send a one-time whisper to {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"🔩 𝐘𝐨𝐮 ᴀʀᴇ sᴇɴᴅɪɴɢ ᴀ ᴏɴᴇ-ᴛɪᴍᴇ 𝐰𝐡𝐢𝐬𝐩𝐞𝐫 to {user.first_name}.\n\nᴛʏᴘᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ/sᴇɴᴛᴇɴᴄᴇ."),
-                    thumb_url="https://te.legra.ph/file/e19d8eb469721d4df03de.jpg",
+                    thumb_url="https://telegra.ph/file/18605815b97d21199a9de.jpg",
                     reply_markup=one_time_whisper_btn
                 )
             ]
@@ -110,9 +110,9 @@ async def in_help():
     answers = [
         InlineQueryResultArticle(
             title="💒 Whisper",
-            description=f"@HINATA_N_BOT [USERNAME | ID] [TEXT]",
+            description=f"@Yashika_mUsicBot [USERNAME | ID] [TEXT]",
             input_message_content=InputTextMessageContent(f"**📍Usage:**\n\n@HINATA_N_BOT(Target Username or ID) (Your Message).\n\n**Example:**\n@HINATA_N_BOT @username ɪ ᴡᴀɴɴᴀ ᴘʜᴜᴄᴋ ʏᴏᴜ"),
-            thumb_url="https://te.legra.ph/file/f4f57c093a37338a92e15.jpg",
+            thumb_url="https://telegra.ph/file/18605815b97d21199a9de.jpg",
             reply_markup=switch_btn
         )
     ]
