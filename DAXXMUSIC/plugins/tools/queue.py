@@ -156,7 +156,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     basic[videoid] = False
     buttons = queue_back_markup(_, what)
     med = InputMediaPhoto(
-        media="https://te.legra.ph/file/f4f57c093a37338a92e15.jpg",
+        media="https://telegra.ph/file/18605815b97d21199a9de.jpg",
         caption=_["queue_1"],
     )
     await CallbackQuery.edit_message_media(media=med)
@@ -165,9 +165,9 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     for x in got:
         j += 1
         if j == 1:
-            msg += f'Streaming :\n\n✨ Title : {x["title"]}\nDuration : {x["dur"]}\nBy : {x["by"]}\n\n'
+            msg += f'𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 :\n\n✨ 𝐓𝐢𝐭𝐥𝐞 : {x["title"]}\n𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 : {x["dur"]}\n𝐁𝐲 : {x["by"]}\n\n'
         elif j == 2:
-            msg += f'Queued :\n\n✨ Title : {x["title"]}\nDuration : {x["dur"]}\nBy : {x["by"]}\n\n'
+            msg += f'𝐐𝐮𝐞𝐮𝐞𝐝 :\n\n✨ 𝐓𝐢𝐭𝐥𝐞 : {x["title"]}\n𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 : {x["dur"]}\n𝐁𝐲 : {x["by"]}\n\n'
         else:
             msg += f'✨ Title : {x["title"]}\nDuration : {x["dur"]}\nBy : {x["by"]}\n\n'
     if "Queued" in msg:
