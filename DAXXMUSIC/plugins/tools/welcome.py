@@ -24,11 +24,12 @@ from logging import getLogger
 
 
 random_photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+    "https://telegra.ph/file/559396cd29ee4e847ed5d.jpg",
+    "https://telegra.ph/file/d68e3c43f8a1586f903d4.jpg",
+    "https://telegra.ph/file/9c89987d2ff15e4a1e3ef.jpg",
+    "https://telegra.ph/file/c4a33a06f9b403083c1e3.jpg",
+    "https://telegra.ph/file/8e29ab3ee6697978e160a.jpg",
+    "https://telegra.ph/file/18605815b97d21199a9de.jpg",
 ]
 # --------------------------------------------------------------------------------- #
 
@@ -159,24 +160,23 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             welcomeimg = welcomepic(
                 pic, user.first_name, member.chat.title, user.id, user.username
             )
-            button_text = "๏ ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ ๏"
-            add_button_text = "๏ ᴋɪᴅɴᴀᴘ ᴍᴇ ๏"
+            button_text = "😻 𝐒𝐞𝐞 𝐧𝐞𝐰 𝐌𝐞𝐦𝐛𝐞𝐫 😻"
+            add_button_text = "🥂 𝐊𝐢𝐝𝐧𝐚𝐩 𝐌𝐞 𝐁𝐚𝐛𝐲 😍"
             deep_link = f"tg://openmessage?user_id={user.id}"
             add_link = f"https://t.me/{app.username}?startgroup=true"
             temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
                 member.chat.id,
                 photo=welcomeimg,
                 caption=f"""
-**❅────✦ ᴡᴇʟᴄᴏᴍᴇ ✦────❅**
+**♡♡♡♡♡♡🥀 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐡𝐞𝐫𝐞 𝐃𝐞𝐚𝐫 💕 ♡♡♡♡♡♡**
+╔════╤╤╤╤════╗
+**✨ 𝐍𝐚𝐦𝐞 👉🏻** {user.mention}
+**✨ 𝐈𝐃 👉🏻** `{user.id}`
+**✨ 𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞 👉🏻** @{user.username}
+**✨ 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 👉🏻** {count}
+»»---------------►
 
-▰▰▰▰▰▰▰▰▰▰▰▰▰
-**➻ 𝐍ᴀᴍᴇ »** {user.mention}
-**➻ 𝐈ᴅ »** `{user.id}`
-**➻ ᴜ_ɴᴀᴍᴇ »** @{user.username}
-**➻ 𝐓ᴏᴛᴀʟ 𝐌ᴇᴍʙᴇʀs »** {count}
-▰▰▰▰▰▰▰▰▰▰▰▰▰
-
-**❅─────✧❅✦❅✧─────❅**
+**♡♡♡♡♡♡♡♡♡♡♡♡**
 """,
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton(button_text, url=deep_link)],
