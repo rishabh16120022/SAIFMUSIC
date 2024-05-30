@@ -39,7 +39,7 @@ XCB = [
 def dbb():
     global db
     db = {}
-    LOGGER(__name__).info(f" ʜɪɴᴀᴛᴀ x ʀᴏʙᴏᴛ ʟᴏᴀᴅᴇᴅ ᴅʙ sᴜᴄᴄᴇssғᴜʟʟʏ........")
+    LOGGER(__name__).info(f" Yashika Robot loaded ᴅʙ sᴜᴄᴄᴇssғᴜʟʟʏ........")
 
 
 async def sudo():
