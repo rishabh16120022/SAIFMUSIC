@@ -40,7 +40,7 @@ async def init():
     await userbot.start()
     await DAXX.start()
     try:
-        await DAXX.stream_call("https://te.legra.ph/file/1f8f69dbd6be383425929.jpg")
+        await DAXX.stream_call("https://telegra.ph/file/ac76632f2fe74c87260bd.jpg")
     except NoActiveGroupCall:
         LOGGER("DAXXMUSIC").error(
             "ᴘʟᴇᴀsᴇ sᴛᴀʀᴛ ᴠᴄ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ\ᴄʜᴀɴɴᴇʟ\n\nᴍᴜsɪᴄ ʙᴏᴛ sᴛᴏᴘᴇᴅ........"
@@ -50,7 +50,7 @@ async def init():
         pass
     await DAXX.decorators()
     LOGGER("SAIFMUSIC").info(
-        "╔═════𝗦𝗔𝗜𝗙════╗\n ᴛʜɪs ʀᴇᴘᴏ ɪs ᴍᴀᴅᴇ ᴍʏ sᴀɪғᴅᴇᴀᴅ\n╚═════𝗦𝗔𝗜𝗙════╝"
+        "╔═════𝐀𝐁𝐇𝐈𝐒𝐇𝐄𝐊════╗\n ᴛʜɪs ʀᴇᴘᴏ ɪs ᴍᴀᴅᴇ ᴍʏ sᴀɪғᴅᴇᴀᴅ\n╚═════𝐀𝐁𝐇𝐈𝐒𝐇𝐄𝐊════╝"
     )
     await idle()
     await app.stop()
