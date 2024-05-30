@@ -33,25 +33,25 @@ def stream_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 10:
-        bar = "Hey"
+        bar = "𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫🙋‍♂️"
     elif 10 < umm < 20:
-        bar = "—◉————————"
+        bar = "𝐓𝐡𝐢𝐬 𝐢𝐬 𝐘𝐚𝐬𝐡𝐢𝐤𝐚 𝐦𝐮𝐬𝐢𝐜 𝐛𝐨𝐭❤"
     elif 20 <= umm < 30:
-        bar = "——◉———————"
+        bar = "𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐀𝐝𝐝𝐢𝐧𝐠 𝐦𝐞"
     elif 30 <= umm < 40:
-        bar = "———◉——————"
+        bar = "𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ❤"
     elif 40 <= umm < 50:
-        bar = "————◉—————"
+        bar = "𝐈 𝐦 𝐀𝐜𝐭𝐢𝐯𝐞 𝟐𝟒*𝟕"
     elif 50 <= umm < 60:
-        bar = "—————◉————"
+        bar = "𝐢 𝐰𝐢𝐥𝐥 𝐥𝐞𝐭 𝐮𝐡 𝐟𝐞𝐞𝐥 𝐚𝐧𝐭𝐢𝐥𝐚𝐠 𝐦𝐮𝐬𝐢𝐜❤"
     elif 60 <= umm < 70:
-        bar = "——————◉———"
+        bar = ""
     elif 70 <= umm < 80:
-        bar = "———————◉——"
+        bar = "𝐌𝐲 𝐨𝐰𝐧𝐞𝐫 𝐢𝐬 𝐘𝐚𝐬𝐡𝐢𝐤𝐚❤"
     elif 80 <= umm < 95:
-        bar = "————————◉—"
+        bar = "𝐈 𝐡𝐚𝐯𝐞 𝐛𝐞𝐞𝐧 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 𝐀𝐛𝐡𝐢𝐬𝐡𝐞𝐤❤"
     else:
-        bar = "—————————◉"
+        bar = "𝐓𝐡𝐚𝐧𝐤 𝐘𝐨𝐮💝"
     buttons = [
                 [
             InlineKeyboardButton(
@@ -90,11 +90,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                callback_data=f"DAXXPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
+                callback_data=f"𝐘𝐚𝐬𝐡𝐢𝐤𝐚𝐌𝐮𝐬𝐢𝐜𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                callback_data=f"DAXXPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
+                callback_data=f"𝐘𝐚𝐬𝐡𝐢𝐤𝐚𝐌𝐮𝐬𝐢𝐜𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
         [
