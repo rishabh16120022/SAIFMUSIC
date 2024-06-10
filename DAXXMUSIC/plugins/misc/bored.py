@@ -16,8 +16,8 @@ async def bored_command(client, message):
         activity = data.get("ᴀᴄᴛɪᴠɪᴛʏ")
         if activity:
             # Send the activity to the user who triggered the command
-            await message.reply(f"ғᴇʟʟɪɴɢ ʙᴏʀᴇᴅ? ʜᴏᴡ ᴀʙᴏᴜᴛ:\n\n {activity}")
+            await message.reply(f"𝗮𝘄𝘄 𝗙𝗲𝗲𝗹𝗶𝗻𝗴 𝗕𝗼𝗮𝗿𝗲𝗱? 𝗛𝗼𝘄 𝗔𝗯𝗼𝘂𝘁:\n\n {activity}")
         else:
-            await message.reply("Nᴏ ᴀᴄᴛɪᴠɪᴛʏ ғᴏᴜɴᴅ.")
+            await message.reply("𝗦𝗲𝗱 𝗡𝗼 𝗔𝗰𝘁𝗶𝘃𝗶𝘁𝘆 𝗙𝗼𝘂𝗻𝗱.")
     else:
-        await message.reply("Fᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ ᴀᴄᴛɪᴠɪᴛʏ.")
+        await message.reply("𝗢𝗼𝗽𝘀 𝗙𝗮𝗶𝗹𝗲𝗱 𝘁𝗼 𝗙𝗲𝘁𝗰𝗵 𝗔𝗰𝘁𝗶𝘃𝗶𝘁𝘆.")
