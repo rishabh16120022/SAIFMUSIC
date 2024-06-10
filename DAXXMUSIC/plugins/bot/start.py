@@ -100,7 +100,7 @@ async def start_pm(client, message: Message, _):
                 [
                     [
                         InlineKeyboardButton(text=_["S_B_8"], url=link),
-                        InlineKeyboardButton(text="𝗢𝘄𝗻𝗲𝗿❣️", url=https://t.me/niksonfire),
+                        InlineKeyboardButton(text="_["S_B_9"], url=config.SUPPORT_CHAT),
                     ],
                 ]
             )
