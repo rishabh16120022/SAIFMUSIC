@@ -31,5 +31,8 @@ def private_panel(_):
         [
             InlineKeyboardButton("🥀 𝗦𝗧𝗬𝗟𝗜𝗦𝗛 𝗗𝗣𝗭 𝗔𝗡𝗗 𝗕𝗜𝗢 ✨", url=f"https://t.me/Stylish_Bio_Dp_0"),
         ],
+        [
+            InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper"),
+        ]
     ]
     return buttons
