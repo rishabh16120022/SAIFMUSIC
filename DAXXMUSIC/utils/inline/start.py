@@ -29,7 +29,7 @@ def private_panel(_):
             InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
         ],
         [
-            InlineKeyboardButton("🥀 ʏᴀʜᴀ ᴀᴀᴏ ✨", url=f"https://t.me/pandazzzworld"),
+            InlineKeyboardButton("🥀 𝗦𝗧𝗬𝗟𝗜𝗦𝗛 𝗗𝗣𝗭 𝗔𝗡𝗗 𝗕𝗜𝗢 ✨", url=f"https://t.me/Stylish_Bio_Dp_0"),
         ],
     ]
     return buttons
