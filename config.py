@@ -18,9 +18,9 @@ OWNER_USERNAME = getenv("OWNER_USERNAME","Abhi_Rss")
 # --------------------------------------------------------
 BOT_USERNAME = getenv("BOT_USERNAME" , "Yashika_mUsicBot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "𝐘𝐀𝐒𝐇𝐈𝐊𝐀 𝐌𝐔𝐒𝐈𝐂 🎵")
+BOT_NAME = getenv("BOT_NAME" , "Hungama music bot 🎵")
 # ---------------------------------------------------------
-ASSUSERNAME = getenv("ASSUSERNAME" , "sachin_jaatttt")
+ASSUSERNAME = getenv("ASSUSERNAME" , "@Hungama_music_assistant")
 # ---------------------------------------------------------
 
 
@@ -141,15 +141,15 @@ confirmer = {}
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/ac76632f2fe74c87260bd.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/ac76632f2fe74c87260bd.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/3d968ac52d302c706869f.jpg"
 )
-PLAYLIST_IMG_URL = "https://telegra.ph/file/ac76632f2fe74c87260bd.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/ac76632f2fe74c87260bd.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/ac76632f2fe74c87260bd.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/ac76632f2fe74c87260bd.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/df9ed61f2c1de16d94975.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/df9ed61f2c1de16d94975.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/file/12a643f987b3d3691e52a.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph/file/48fd2ac34520da8bb0d7e.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/ac76632f2fe74c87260bd.jpg"
 SOUNCLOUD_IMG_URL = "https://telegra.ph/file/ac76632f2fe74c87260bd.jpg"
 YOUTUBE_IMG_URL = "https://telegra.ph/file/ac76632f2fe74c87260bd.jpg"
