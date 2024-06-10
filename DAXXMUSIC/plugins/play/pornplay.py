@@ -16,8 +16,8 @@ vdo_link = {}
 
 keyboard = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("⊝ 𝐂ʟᴏsᴇ ⊝", callback_data="close_data"), 
-            InlineKeyboardButton("⊝ 𝐕ᴘʟᴀʏ⊝", callback_data="play"),
+            InlineKeyboardButton("🗿 𝗖𝗟𝗢𝗦𝗘 🗿", callback_data="close_data"), 
+            InlineKeyboardButton("🤤 𝗩𝗣𝗟𝗔𝗬 🤤", callback_data="play"),
         ]
 ])
 
@@ -27,7 +27,7 @@ keyboard = InlineKeyboardMarkup([
 async def play_callback(_, query):
     # You can add more logic here before initiating playback
     await play(query.from_user.id)  # Assuming play function accepts user ID
-    await query.answer("Playback started!")
+    await query.answer("𝗦𝗧𝗔𝗥𝗧𝗘𝗗 𝗣𝗟𝗔𝗬𝗜𝗡𝗚 🗿")
         
 ##########🖕
 
@@ -86,7 +86,7 @@ def get_video_info(title):
 @app.on_message(filters.command("porn"))
 async def get_random_video_info(client, message):
     if len(message.command) == 1:
-        await message.reply("ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴛɪᴛʟᴇ ᴛᴏ sᴇᴀʀᴄʜ.")
+        await message.reply("𝗚𝗜𝗩𝗘 𝗠𝗘 𝗔 𝗣𝗢𝗥𝗡 𝗧𝗜𝗧𝗟𝗘 𝗧𝗢 𝗦𝗧𝗥𝗘𝗔𝗠.")
         return
 
     title = ' '.join(message.command[1:])
@@ -98,14 +98,14 @@ async def get_random_video_info(client, message):
         vdo_link[message.chat.id] = {'link': video_link}
         keyboard1 = InlineKeyboardMarkup([
             [
-                InlineKeyboardButton("⊝ 𝐂ʟᴏsᴇ ⊝", callback_data="close_data"), 
-                InlineKeyboardButton("⊝ 𝐕ᴘʟᴀʏ⊝", callback_data=f"vplay"),
+                InlineKeyboardButton("🗿 𝗖𝗟𝗢𝗦𝗘 🗿", callback_data="close_data"), 
+                InlineKeyboardButton("🤤 𝗩𝗣𝗟𝗔𝗬 🤤", callback_data=f"vplay"),
             ]
     ])
         await message.reply_video(video, caption=f"{title}", reply_markup=keyboard1)
              
     else:
-        await message.reply(f"ɴᴏ ᴠɪᴅᴇᴏ ʟɪɴᴋ ғᴏᴜɴᴅ ғᴏʀ '{title}'.")
+        await message.reply(f" 𝗩𝗶𝗱𝗲𝗼 𝗟𝗶𝗻𝗸 𝗡𝗼𝘁 𝗙𝗼𝘂𝗻𝗱 𝗳𝗼𝗿 '{title}'.")
 
 ######
 
@@ -113,7 +113,7 @@ async def get_random_video_info(client, message):
 @app.on_message(filters.command("xnxx"))
 async def get_random_video_info(client, message):
     if len(message.command) == 1:
-        await message.reply("ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴛɪᴛʟᴇ ᴛᴏ sᴇᴀʀᴄʜ.")
+        await message.reply("𝗚𝗜𝗩𝗘 𝗠𝗘 𝗔 𝗣𝗢𝗥𝗡 𝗧𝗜𝗧𝗟𝗘 𝗧𝗢 𝗦𝗧𝗥𝗘𝗔𝗠.")
         return
 
     title = ' '.join(message.command[1:])
@@ -129,9 +129,9 @@ async def get_random_video_info(client, message):
 
         await message.reply_video(
             video,
-            caption=f"Add Title: {title}\nViews: {views}\nRatings: {ratings}",
+            caption=f"𝗔𝗱𝗱 𝗧𝗶𝘁𝗹𝗲: {title}\n𝗩𝗶𝗲𝘄𝘀: {views}\n𝗥𝗮𝘁𝗶𝗻𝗴𝘀: {ratings}",
             reply_markup=keyboard
         )
     else:
-        await message.reply(f"ɴᴏ ᴠɪᴅᴇᴏ ʟɪɴᴋ ғᴏᴜɴᴅ ғᴏʀ '{title}'.")
+        await message.reply(f"𝗩𝗶𝗱𝗲𝗼 𝗟𝗶𝗻𝗸 𝗡𝗼𝘁 𝗙𝗼𝘂𝗻𝗱 𝗳𝗼𝗿 '{title}'.")
             
