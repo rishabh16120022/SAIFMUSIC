@@ -29,29 +29,29 @@ from strings import get_string
 #--------------------------
 
 NEXI_VID = [
-"https://telegra.ph/file/46d496dc442cd8049b2fa.mp4",
-"https://telegra.ph/file/c5f6d6896ebaf0d850ab3.mp4",
-"https://telegra.ph/file/f6b19dd9e27f8f497963e.mp4",
-"https://telegra.ph/file/83fbc88910c7497bc2ef6.mp4",
-"https://telegra.ph/file/52b5e88bf9d8112b766b8.mp4",
-"https://telegra.ph/file/5d776b46554f7ecfe765f.mp4",
-"https://telegra.ph/file/620d4218a3ba9a5451759.mp4",
-"https://telegra.ph/file/b909d9b2046ce61b2eff1.mp4",
-"https://telegra.ph/file/e3cb6fe731c94b0c72cd0.mp4",
-"https://telegra.ph/file/f27ff2fc84f8c8ac36153.mp4",
-"https://telegra.ph/file/24300a64d0be8c49cc563.mp4",
-"https://telegra.ph/file/e0c1e6842d8834bc47e31.mp4",
-"https://telegra.ph/file/35eaed4f2c1868eee3b74.mp4",
-"https://telegra.ph/file/0b14d85c896bb0f8b1294.mp4",
-"https://telegra.ph/file/7c2eb9496a2945e265be3.mp4",
-"https://telegra.ph/file/73ea250361f8c476cb2fa.mp4",
-"https://telegra.ph/file/69f47ca27c954373d408c.mp4",
-"https://telegra.ph/file/3695a9abf0dca95d80850.mp4",
-"https://telegra.ph/file/40f691268bff0b53211e8.mp4",
-"https://telegra.ph/file/da8e6902292d2eed900f2.mp4",
-"https://telegra.ph/file/ad57bd6404830e0a62996.mp4",
-"https://telegra.ph/file/97de731549c53adb7c600.mp4",
-"https://telegra.ph/file/01438d2b55837dbceb19f.mp4",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
+"https://telegra.ph/file/b0ee2d9161f0c4436dd3a.jpg",
 "https://telegra.ph/file/5937666198f4912aaf408.mp4",
 
 ]
@@ -80,7 +80,7 @@ async def start_pm(client, message: Message, _):
                 )
             return
         if name[0:3] == "inf":
-            m = await message.reply_text("🔎")
+            m = await message.reply_text("𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴🕵🏻")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -100,7 +100,7 @@ async def start_pm(client, message: Message, _):
                 [
                     [
                         InlineKeyboardButton(text=_["S_B_8"], url=link),
-                        InlineKeyboardButton(text=_["S_B_9"], url=config.SUPPORT_CHAT),
+                        InlineKeyboardButton(text="𝗢𝘄𝗻𝗲𝗿❣️", url=https://t.me/niksonfire),
                     ],
                 ]
             )
@@ -114,7 +114,7 @@ async def start_pm(client, message: Message, _):
             if await is_on_off(2):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
-                    text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>ᴛʀᴀᴄᴋ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</b>.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+                    text=f"{message.from_user.mention} 𝗝𝘂𝘀𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 𝗧𝗵𝗲 𝗕𝗼𝘁 𝗧𝗼 𝗖𝗵𝗲𝗰𝗸 <b>𝗧𝗿𝗮𝗰𝗸 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻</b>.\n\n<b>𝗨𝘀𝗲𝗿 𝗜𝗗 :</b> <code>{message.from_user.id}</code>\n<b>𝗨𝘀𝗲𝗿𝗻𝗮𝗺𝗲 :</b> @{message.from_user.username}",
                 )
     else:
         out = private_panel(_)
@@ -126,7 +126,7 @@ async def start_pm(client, message: Message, _):
         if await is_on_off(2):
             return await app.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+                text=f"{message.from_user.mention} 𝗝𝘂𝘀𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 𝘁𝗵𝗲 𝗕𝗼𝘁.\n\n<b>𝗨𝘀𝗲𝗿 𝗜𝗗 :</b> <code>{message.from_user.id}</code>\n<b>𝘂𝘀𝗲𝗿𝗻𝗮𝗺𝗲  :</b> @{message.from_user.username}",
             )
 
 
