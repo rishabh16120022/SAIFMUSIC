@@ -47,7 +47,7 @@ def stream_markup_timer(_, chat_id, played, dur):
     elif 60 <= umm < 70:
         bar = ""
     elif 70 <= umm < 80:
-        bar = "𝐌𝐲 𝐨𝐰𝐧𝐞𝐫 𝐢𝐬 𝐘𝐚𝐬𝐡𝐢𝐤𝐚❤"
+        bar = "𝐌𝐲 𝐨𝐰𝐧𝐞𝐫 𝐢𝐬 𝐍𝐢𝐜𝐤❤"
     elif 80 <= umm < 95:
         bar = "𝐈 𝐡𝐚𝐯𝐞 𝐛𝐞𝐞𝐧 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 𝐍𝐢𝐜𝐤❤"
     else:
