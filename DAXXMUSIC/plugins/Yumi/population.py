@@ -34,7 +34,7 @@ def country_command_handler(client: Client, message: Message):
     except requests.exceptions.HTTPError as http_err:
         response_text = f"ʜᴛᴛᴘ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴇɴᴛᴇʀ ᴄᴏʀʀᴇᴄᴛ ᴄᴏᴜɴᴛʀʏ ᴄᴏᴅᴇ"
     except Exception as err:
-        response_text = f" ᴇʀʀᴏʀ @SAIFHELPGC "
+        response_text = f" ᴇʀʀᴏʀ ᴀsᴋ ᴛᴏ ᴏᴡɴᴇʀ @niksonfire "
 
     # Send the response to the Telegram chat
     message.reply_text(response_text)
