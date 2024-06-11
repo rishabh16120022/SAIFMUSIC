@@ -61,20 +61,20 @@ font_path = "DAXXMUSIC/assets/hiroko.ttf"
 chat_id_env = environ.get("CHAT_ID")
 CHAT_ID = [int(app) for app in chat_id_env.split(",")] if chat_id_env else []
 
-TEXT = environ.get("APPROVED_WELCOME_TEXT", "**❅─────✧❅SAIF MUSIC❅✧─────❅**\n**🥀ʜᴇʏ {mention}**\n\n**🏓ᴡᴇʟᴄᴏᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ✨**\n\n**➻** {title}\n\n**💞 ɴᴏᴡ ᴍᴀᴋᴇ ɴᴇᴡ ғʀɪᴇɴᴅs ᴀɴᴅ sᴛᴀʏ ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ🥳**\n**❅─────✧❅ SAIF MUSIC ❅✧─────❅**")
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "**❅─────✧❅HUNGAMA MUSIC❅✧─────❅**\n**🥀ʜᴇʏ {mention}**\n\n**🏓ᴡᴇʟᴄᴏᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ✨**\n\n**➻** {title}\n\n**💞 ɴᴏᴡ ᴍᴀᴋᴇ ɴᴇᴡ ғʀɪᴇɴᴅs ᴀɴᴅ sᴛᴀʏ ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ🥳**\n**❅─────✧❅ HUNGAMA MUSIC ❅✧─────❅**")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # List of random photo links
 random_photo_links = [
-    "https://te.legra.ph/file/8584dc1c4ed3e5b94dd2c.jpg",
-    "https://te.legra.ph/file/77ddcdb1f83e1a385836c.jpg",
-    "https://te.legra.ph/file/1a561d189d4f1470647ec.jpg",
-    "https://te.legra.ph/file/84628c1ceebc5c52a01cc.jpg",
-    "https://te.legra.ph/file/fc4f74e7019cb255702d8.jpg",
-    "https://te.legra.ph/file/28dfe06f4652caa3b06b8.jpg",
-    "https://te.legra.ph/file/b3fc7f08dfe25e5951f08.jpg",
-    "https://te.legra.ph/file/35d55e85606c45f9bb138.jpg",
-    "https://te.legra.ph/file/34d3eb79df1a5a85fad25.jpg",
+    "https://telegra.ph/file/dda08a0a6f2e8282f8332.jpg",
+    "https://telegra.ph/file/dda08a0a6f2e8282f8332.jpg",
+    "https://telegra.ph/file/dda08a0a6f2e8282f8332.jpg",
+    "https://telegra.ph/file/dda08a0a6f2e8282f8332.jpg",
+    "https://telegra.ph/file/dda08a0a6f2e8282f8332.jpg",
+    "https://telegra.ph/file/dda08a0a6f2e8282f8332.jpg",
+    "https://telegra.ph/file/dda08a0a6f2e8282f8332.jpg",
+    "https://telegra.ph/file/dda08a0a6f2e8282f8332.jpg",
+    "https://telegra.ph/file/dda08a0a6f2e8282f8332.jpg",
     # Add more links as needed
 ]
 
