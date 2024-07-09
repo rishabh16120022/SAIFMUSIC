@@ -9,36 +9,36 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = 25543673
+API_HASH = 4a6a881b368c8a2a03f6426267f55e62
 # ------------------------------------------------------
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = 7214208441:AAEfOjvCaay7Lkq_BRt4BLxKp5zc1RkjICU
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","Niksonfire")
+OWNER_USERNAME = @Niksonfire
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "@Hungama_Musicc_bot")
+BOT_USERNAME = @Hungama_Musicc_bot
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "Hungama music bot 🎵")
+BOT_NAME = Hungama music bot 🎵
 # ---------------------------------------------------------
-ASSUSERNAME = getenv("ASSUSERNAME" , "@Hungama_music_assistant")
+ASSUSERNAME = @Hungama_music_assistant
 # ---------------------------------------------------------
 
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = mongodb+srv://yashumusic123:yashumusic123@cluster0.vk9sfkf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
 # ----------------------------------------------------------------
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 99999))
+DURATION_LIMIT_MIN = 99999
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", -1002094021168))
+LOGGER_ID = -1002094021168
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 6587731758))
+OWNER_ID = 6587731758
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
